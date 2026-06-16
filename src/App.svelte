@@ -1195,7 +1195,7 @@
                       x2={event.xOrig} 
                       y2={row.Y_axis + 5} 
                       class="svg-tick-line" 
-                      opacity={searchQuery.trim() && !isHighlighted(event) ? 0.3 : 1}
+                      opacity={hoveredEventId ? (isHovered(event) ? 1 : 0.15) : (searchQuery.trim() && !isHighlighted(event) ? 0.3 : 1)}
                       style="transition: opacity 150ms;"
                     />
 
@@ -1205,7 +1205,7 @@
                       d={event.pathData}
                       stroke={isHovered(event) ? 'var(--color-const-blue)' : (isHighlighted(event) ? '#e65100' : (event.theme ? event.theme.stroke : 'var(--color-const-blue)'))}
                       stroke-width={isHovered(event) ? '2.5px' : (isHighlighted(event) ? '2.5px' : '1.5px')}
-                      opacity={searchQuery.trim() && !isHighlighted(event) ? 0.3 : 1}
+                      opacity={hoveredEventId ? (isHovered(event) ? 1 : 0.15) : (searchQuery.trim() && !isHighlighted(event) ? 0.3 : 1)}
                       style="transition: opacity 150ms;"
                     />
 
@@ -1217,7 +1217,7 @@
                       fill={isHovered(event) ? 'var(--color-const-blue)' : (isHighlighted(event) ? '#e65100' : (event.theme ? event.theme.stroke : 'var(--color-const-blue)'))}
                       stroke="#ffffff"
                       stroke-width="1.5"
-                      opacity={searchQuery.trim() && !isHighlighted(event) ? 0.3 : 1}
+                      opacity={hoveredEventId ? (isHovered(event) ? 1 : 0.15) : (searchQuery.trim() && !isHighlighted(event) ? 0.3 : 1)}
                       style="transition: opacity 150ms, r 150ms;"
                     />
                   {/each}
@@ -1232,7 +1232,7 @@
                       <!-- svelte-ignore a11y_no_static_element_interactions -->
                       <g 
                         class="svg-balloon-group" 
-                        style="cursor: pointer; opacity: {searchQuery.trim() && !isHighlighted(event) ? 0.3 : 1}; transition: opacity 150ms;"
+                        style="cursor: pointer; opacity: {hoveredEventId ? 0.2 : (searchQuery.trim() && !isHighlighted(event) ? 0.3 : 1)}; transition: opacity 150ms;"
                         role="presentation"
                         onclick={() => {
                           if (selectedEventId === event.id) {
@@ -1301,7 +1301,7 @@
                       <!-- svelte-ignore a11y_no_static_element_interactions -->
                       <g 
                         class="svg-balloon-group hovered" 
-                        style="cursor: pointer; opacity: {searchQuery.trim() && !isHighlighted(event) ? 0.3 : 1}; transition: opacity 150ms;"
+                        style="cursor: pointer; opacity: 1; transition: opacity 150ms;"
                         role="presentation"
                         onclick={() => {
                           if (selectedEventId === event.id) {
