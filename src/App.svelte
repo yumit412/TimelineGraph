@@ -152,6 +152,13 @@
     return processedTimelineData.flatMap(r => r.events).find(e => e.id === hoveredEventId) || null;
   });
 
+  function isHovered(event) {
+    if (!hoveredEventId) return false;
+    if (event.id === hoveredEventId) return true;
+    const hEvent = hoveredEvent;
+    return hEvent && event.title === hEvent.title;
+  }
+
   // D3 Zooming & Sizing State
   let svgElement = $state(null);
   let zoomTransform = $state(d3.zoomIdentity);
@@ -1196,8 +1203,8 @@
                     <path 
                       class="svg-leader-line"
                       d={event.pathData}
-                      stroke={hoveredEventId === event.id ? '#202020' : (isHighlighted(event) ? '#e65100' : (event.theme ? event.theme.stroke : 'var(--color-const-blue)'))}
-                      stroke-width={hoveredEventId === event.id ? '2.5px' : (isHighlighted(event) ? '2.5px' : '1.5px')}
+                      stroke={isHovered(event) ? '#202020' : (isHighlighted(event) ? '#e65100' : (event.theme ? event.theme.stroke : 'var(--color-const-blue)'))}
+                      stroke-width={isHovered(event) ? '2.5px' : (isHighlighted(event) ? '2.5px' : '1.5px')}
                       opacity={searchQuery.trim() && !isHighlighted(event) ? 0.3 : 1}
                       style="transition: opacity 150ms;"
                     />
@@ -1207,7 +1214,7 @@
                       cx={event.xOrig}
                       cy={row.Y_axis}
                       r={isHighlighted(event) ? "5" : "4"}
-                      fill={hoveredEventId === event.id ? '#202020' : (isHighlighted(event) ? '#e65100' : (event.theme ? event.theme.stroke : 'var(--color-const-blue)'))}
+                      fill={isHovered(event) ? '#202020' : (isHighlighted(event) ? '#e65100' : (event.theme ? event.theme.stroke : 'var(--color-const-blue)'))}
                       stroke="#ffffff"
                       stroke-width="1"
                       opacity={searchQuery.trim() && !isHighlighted(event) ? 0.3 : 1}
@@ -1221,7 +1228,7 @@
                 <!-- Loop over all events in visible rows, rendering non-hovered ones first -->
                 {#each processedTimelineData as row}
                   {#each row.events as event}
-                    {#if event.id !== hoveredEventId}
+                    {#if !isHovered(event)}
                       <!-- svelte-ignore a11y_no_static_element_interactions -->
                       <g 
                         class="svg-balloon-group" 
@@ -1287,67 +1294,71 @@
                   {/each}
                 {/each}
 
-                <!-- Draw the hovered balloon last so it is always on top of all other elements -->
-                {#if hoveredEvent}
-                  <!-- svelte-ignore a11y_no_static_element_interactions -->
-                  <g 
-                    class="svg-balloon-group" 
-                    style="cursor: pointer; opacity: {searchQuery.trim() && !isHighlighted(hoveredEvent) ? 0.3 : 1}; transition: opacity 150ms;"
-                    role="presentation"
-                    onclick={() => {
-                      if (selectedEventId === hoveredEvent.id) {
-                        selectedEventId = null;
-                      } else {
-                        selectedEventId = hoveredEvent.id;
-                      }
-                    }}
-                    onmouseenter={() => hoveredEventId = hoveredEvent.id}
-                    onmouseleave={() => hoveredEventId = null}>
-                    
-                    <rect 
-                      x={hoveredEvent.xBalloon - balloonWidth / 2} 
-                      y={hoveredEvent.yBalloon} 
-                      width={balloonWidth} 
-                      height={hoveredEvent.H} 
-                      rx="6"
-                      ry="6"
-                      fill="#ffffff"
-                      stroke={selectedEventId === hoveredEvent.id ? 'var(--color-const-blue)' : (isHighlighted(hoveredEvent) ? '#e65100' : 'var(--color-const-blue)')}
-                      stroke-width={selectedEventId === hoveredEvent.id ? '2.5' : (isHighlighted(hoveredEvent) ? '3' : '2.5')}
-                      class="svg-balloon-rect active"
-                    />
+                <!-- Draw the hovered identical balloons last so they are always on top of all other elements -->
+                {#each processedTimelineData as row}
+                  {#each row.events as event}
+                    {#if isHovered(event)}
+                      <!-- svelte-ignore a11y_no_static_element_interactions -->
+                      <g 
+                        class="svg-balloon-group" 
+                        style="cursor: pointer; opacity: {searchQuery.trim() && !isHighlighted(event) ? 0.3 : 1}; transition: opacity 150ms;"
+                        role="presentation"
+                        onclick={() => {
+                          if (selectedEventId === event.id) {
+                            selectedEventId = null;
+                          } else {
+                            selectedEventId = event.id;
+                          }
+                        }}
+                        onmouseenter={() => hoveredEventId = event.id}
+                        onmouseleave={() => hoveredEventId = null}>
+                        
+                        <rect 
+                          x={event.xBalloon - balloonWidth / 2} 
+                          y={event.yBalloon} 
+                          width={balloonWidth} 
+                          height={event.H} 
+                          rx="6"
+                          ry="6"
+                          fill="#ffffff"
+                          stroke={selectedEventId === event.id ? 'var(--color-const-blue)' : (isHighlighted(event) ? '#e65100' : 'var(--color-const-blue)')}
+                          stroke-width={selectedEventId === event.id ? '2.5' : (isHighlighted(event) ? '3' : '2.5')}
+                          class="svg-balloon-rect active"
+                        />
 
-                    <foreignObject 
-                      x={hoveredEvent.xBalloon - balloonWidth / 2} 
-                      y={hoveredEvent.yBalloon} 
-                      width={balloonWidth} 
-                      height={hoveredEvent.H}>
-                      <div class="balloon-content">
-                        <div class="balloon-header" style="background-color: {hoveredEvent.theme ? hoveredEvent.theme.bg : '#F5F5F5'}; border-bottom-color: {hoveredEvent.theme ? hoveredEvent.theme.stroke : 'var(--color-light-gray)'}; border-bottom-width: {selectedEventId === hoveredEvent.id ? '1.5px' : '0px'}">
-                          <span class="balloon-title" style="color: {hoveredEvent.theme ? hoveredEvent.theme.stroke : 'var(--color-near-black)'}" title={hoveredEvent.title}>{hoveredEvent.title}</span>
-                          <span class="balloon-date" style="color: {hoveredEvent.theme ? hoveredEvent.theme.stroke : 'var(--color-dim-gray)'}">{hoveredEvent.date}</span>
-                        </div>
-                        {#if selectedEventId === hoveredEvent.id}
-                          <div class="balloon-desc" title={hoveredEvent.desc}>{hoveredEvent.desc}</div>
-                          <div class="balloon-actions" style="display: flex; justify-content: space-between; padding: 4px 6px; border-top: 1px dashed var(--color-light-gray); background: #fcfcfc;">
-                            <button 
-                              class="cad-btn-xs" 
-                              style="font-size: 8px; padding: 2px 4px; background: #ffffff; border: 1.5px solid var(--color-dim-gray); cursor: pointer; font-family: var(--font-tech); font-weight: bold; color: var(--color-near-black);"
-                              onclick={(e) => { e.stopPropagation(); hideSameBalloons(hoveredEvent.title); }}>
-                              HIDE SAME
-                            </button>
-                            <button 
-                              class="cad-btn-xs" 
-                              style="font-size: 8px; padding: 2px 4px; background: #ffffff; border: 1.5px solid var(--color-dim-gray); cursor: pointer; font-family: var(--font-tech); font-weight: bold; color: var(--color-near-black);"
-                              onclick={(e) => { e.stopPropagation(); selectedEventId = null; }}>
-                              CLOSE
-                            </button>
+                        <foreignObject 
+                          x={event.xBalloon - balloonWidth / 2} 
+                          y={event.yBalloon} 
+                          width={balloonWidth} 
+                          height={event.H}>
+                          <div class="balloon-content">
+                            <div class="balloon-header" style="background-color: {event.theme ? event.theme.bg : '#F5F5F5'}; border-bottom-color: {event.theme ? event.theme.stroke : 'var(--color-light-gray)'}; border-bottom-width: {selectedEventId === event.id ? '1.5px' : '0px'}">
+                              <span class="balloon-title" style="color: {event.theme ? event.theme.stroke : 'var(--color-near-black)'}" title={event.title}>{event.title}</span>
+                              <span class="balloon-date" style="color: {event.theme ? event.theme.stroke : 'var(--color-dim-gray)'}">{event.date}</span>
+                            </div>
+                            {#if selectedEventId === event.id}
+                              <div class="balloon-desc" title={event.desc}>{event.desc}</div>
+                              <div class="balloon-actions" style="display: flex; justify-content: space-between; padding: 4px 6px; border-top: 1px dashed var(--color-light-gray); background: #fcfcfc;">
+                                <button 
+                                  class="cad-btn-xs" 
+                                  style="font-size: 8px; padding: 2px 4px; background: #ffffff; border: 1.5px solid var(--color-dim-gray); cursor: pointer; font-family: var(--font-tech); font-weight: bold; color: var(--color-near-black);"
+                                  onclick={(e) => { e.stopPropagation(); hideSameBalloons(event.title); }}>
+                                  HIDE SAME
+                                </button>
+                                <button 
+                                  class="cad-btn-xs" 
+                                  style="font-size: 8px; padding: 2px 4px; background: #ffffff; border: 1.5px solid var(--color-dim-gray); cursor: pointer; font-family: var(--font-tech); font-weight: bold; color: var(--color-near-black);"
+                                  onclick={(e) => { e.stopPropagation(); selectedEventId = null; }}>
+                                  CLOSE
+                                </button>
+                              </div>
+                            {/if}
                           </div>
-                        {/if}
-                      </div>
-                    </foreignObject>
-                  </g>
-                {/if}
+                        </foreignObject>
+                      </g>
+                    {/if}
+                  {/each}
+                {/each}
 
               </g>
             </g>
