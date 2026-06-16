@@ -1,95 +1,92 @@
-http://localhost:8080/#IC8vIFNZU1RFTSBPUEVSQVRJT04gVElNRUxJTkUKICAgIC8vIEZPUk1BVDogRVFVSVBNRU5UIHwgWVlZWS1NTS1ERCB8IFRJVExFIHwgREVTQ1JJUFRJT04KICAgICMx7Zi46riwIHwgMjAyNi0wNi0xMiB8IOuwsOyEoOuzgOqyvSDtmZXsnbggfCDrsLDshKDrs4Dqsr0g7ZuEIOyYpOuPmeyekSDrsJzsg53tlZjsp4Ag7JWK7J2MIChIL1cgU2FmZXR5IOq4sOuKpSDsnpgg64+Z7J6RKQoKICAgICMy7Zi46riwIHwgMjAyNi0wNi0wMSB8IOyKpOychOy5mCBPZmYg7KCV7KeAIOyLpO2MqCB8IOyhsOyekSDspJEgQ29uc29sZSDtjIzsm4zsiqTsnITsuZggT2ZmIOyLnCDsnbTrj5kg7KCV7KeAIOyLpO2MqCAoSC9XIFNhZmV0eSDrr7jrj5nsnpEsCiAgRi9XIFNhZmV0eeunjCDsnpHrj5kpCgogICAgIzPtmLjquLAgfCAyMDI1LTAyLTA0IHwg7KGw66a97JmE66OMIHwg7KGw66a9IOyZhOujjAogICAgIzPtmLjquLAgfCAyMDI1LTEyLTA5IHwgRi9XIDIuMC4wIOyEpOy5mCB8IEYvVyAyLjAuMCDshKTsuZggKEUtU3RvcCDquLDriqUg6rCc7ISgLCBBQy1EQyDslrTrjJHthLAg7LaU7KCB7ISxIO2ZleuztCkKICAgICMz7Zi46riwIHwgMjAyNS0xMi0yNCB8IEYvVyAxLjEuMSDshKTsuZggfCBGL1cgMS4xLjEg66Gk67CxIOyEpOy5mAogICAgIzPtmLjquLAgfCAyMDI1LTEyLTI5IHwgRi9XIDIuMS4yIOyEpOy5mCB8IEYvVyAyLjEuMiDshKTsuZggKEVWUiBTeXN0ZW0gTW9kZWwgM1Ig7JuA7KeB7J6EL+yCrOyaqeyEsSDqsJzshKAsIFNRQSDthrXqs7wpCiAgICAjM+2YuOq4sCB8IDIwMjYtMDItMjggfCBGL1cgMi4xLjMg7ISk7LmYIHwgRi9XIDIuMS4zIOyEpOy5mCAoTUNfRiDrsI8gR1dfTSDrqqjrk4ggUmV0cmFjdCDsi5wg66mI7LakIO2VtOqysCwgQ29sbGV0IEdyYWIg6rCc7ISgKQoKICAgICM07Zi46riwIHwgMjAyNS0wMy0yMSB8IOyhsOumveyZhOujjCB8IOyhsOumvSDsmYTro4wKICAgICM07Zi46riwIHwgMjAyNS0wOC0yMCB8IEYvVyAyLjAuMCDshKTsuZggfCBGL1cgMi4wLjAg7ISk7LmYIChFLVN0b3Ag6riw64qlIOqwnOyEoCwgQUMtREMg7Ja064yR7YSwIOy2lOyggeyEsSDtmZXrs7QpCiAgICAjNO2YuOq4sCB8IDIwMjUtMTItMTIgfCBGL1cgMi4xLjIg7ISk7LmYIHwgRi9XIDIuMS4yIOyEpOy5mCAoRVZSIFN5c3RlbSBNb2RlbCAzUiDsm4Dsp4HsnoQv7IKs7Jqp7ISxIOqwnOyEoCwgU1FBIO2GteqzvCkKICAgICM07Zi46riwIHwgMjAyNi0wNS0yMiB8IEYvVyAyLjEuMyDshKTsuZggfCBGL1cgMi4xLjMg7ISk7LmYIChNQ19GIOuwjyBHV19NIOuqqOuTiCBSZXRyYWN0IOyLnCDrqYjstqQg7ZW06rKwLCBDb2xsZXQgR3JhYiDqsJzshKApCiAgICAjNO2YuOq4sCB8IDIwMjYtMDYtMDEgfCDsiqTsnITsuZggT2ZmIOygleyngCDsi6TtjKggfCDsobDsnpEg7KSRIENvbnNvbGUg7YyM7JuM7Iqk7JyE7LmYIE9mZiDsi5wg7J2064+ZIOygleyngCDsi6TtjKggKEgvVyBTYWZldHkg66+464+Z7J6RLAogIEYvVyBTYWZldHnrp4wg7J6R64+ZKQoKICAgICPqs7XthrUgfCAyMDI2LTA2LTAxIHwg7LyA7J2067iUIOygnOqxsCDthYzsiqTtirggfCBJbnRlcmZhY2UgQ2FibGUg7KCc6rGwIOyLnCDsoJXsg4Eg7KCV7KeAIO2ZleyduCAoRi9XIFNhZmV0eSDsoJXsg4Eg7J6R64+ZKQoKICAgICMy7Zi46riwIHwgMjAyNi0wMS0zMCB8IE5DUi1LMDAwMDY0IHwgQ29udHJvbCBDb25zb2xlICMyIFJld29yawogICAgIzLtmLjquLAgfCAyMDI0LTEyLTEwIHwgTkNSLUswMDAwMjAgfCBFVjI0MCMyIE1hbnVmYWN0dXJpbmcgTm9uLWNvbmZvcm1hbmNlCiAgICAjM+2YuOq4sCB8IDIwMjYtMDYtMDQgfCBOQ1ItSzAwMDA2OCB8IEVWUiBVbml0ICMzIOKAkyBTbG93IE1vZHVsZSBNb3ZlbWVudCBEdXJpbmcgMSBtbSBDb21tYW5kCiAgICAjM+2YuOq4sCB8IDIwMjYtMDYtMDIgfCBOQ1ItSzAwMDA2NyB8IEVWUiBVbml0IDMgU3lzdGVtIENhcnQgUmV3b3JrCiAgICAjM+2YuOq4sCB8IDIwMjUtMTItMDUgfCBOQ1ItSzAwMDA1OCB8IEVWUiBVbml0IDMgYW5kIFVuaXQgNCBTeXN0ZW0gQ2FydCBSZXdvcmsKICAgICM07Zi46riwIHwgMjAyNi0wNS0yNyB8IE5DUi1LMDAwMDY2IHwgRVZSIFVuaXQgNCBBYm5vcm1hbCBCZWhhdmlvcgogICAgIzTtmLjquLAgfCAyMDI2LTAxLTIxIHwgTkNSLUswMDAwNjMgfCBFVlIgVW5pdCA0IEJlZHNpZGUgVW5pdCBJbnZlc3RpZ2F0aW9uIGFuZCBSZW1vdGUgQ29uc29sZSBSZXdvcmsKICAgICM07Zi46riwIHwgMjAyNS0xMi0wNSB8IE5DUi1LMDAwMDU4IHwgRVZSIFVuaXQgMyBhbmQgVW5pdCA0IFN5c3RlbSBDYXJ0IFJld29yawogICAgIzTtmLjquLAgfCAyMDI1LTA5LTEwIHwgTkNSLUswMDAwNTUgfCBFVlIgVW5pdCA0IE92ZXJjdXJyZW50CiAgICAjNO2YuOq4sCB8IDIwMjUtMDUtMjIgfCBOQ1ItSzAwMDA0NiB8IEVWMjQwICM0IENBTiBDb21tdW5pY2F0aW9uIEZhaWx1cmUgZHVlIHRvIE5DUi1LMDAwMDQ1IHJld29yawogICAgI+qzte2GtSB8IDIwMjYtMDQtMjkgfCBOQ1ItSzAwMDA2NSB8IE1vdG9yIFBvd2VyIExvc3MKICAgICPqs7XthrUgfCAyMDI2LTAxLTA2IHwgTkNSLUswMDAwNjIgfCBUUC1LMDAxNyBNb2RlbCAzUiBFUCBFeGVjdXRpb24gTm9uLWNvbmZvcm1hbmNlcwogICAgI+qzte2GtSB8IDIwMjUtMTItMjQgfCBOQ1ItSzAwMDA2MSB8IE5vbi1jb25mb3JtYW5jZSBvZiBJQzI0MCBDYXNzZXR0ZXMKICAgICPqs7XthrUgfCAyMDI1LTEyLTIyIHwgTkNSLUswMDAwNjAgfCBTdGVyaWxpemVkIEludmVudG9yeSBFTyBHQVMgQ2hlbWljYWwgSW5kaWNhdG9yIEluY29uc2lzdGVuY3kKICAgICPqs7XthrUgfCAyMDI1LTEyLTA1IHwgTkNSLUswMDAwNTkgfCBMYWJlbGluZyBSZXdvcmsKICAgICPqs7XthrUgfCAyMDI1LTExLTE3IHwgTkNSLUswMDAwNTcgfCBbRVZTMjQwUl0gRFZNIE1vZHVsZSBOby40IFRyYW5zbGF0aW9uLUFyZWEgRGV2aWF0aW9uIGFuZCBPdmVyY3VycmVudCBJc3N1ZQogICAgI+qzte2GtSB8IDIwMjUtMTEtMDcgfCBOQ1ItSzAwMDA1NiB8IEUtU3RvcCBJbmNvbnNpc3RlbmN5CiAgICAj6rO17Ya1IHwgMjAyNS0wOS0wMiB8IE5DUi1LMDAwMDU0IHwgQWRhcHRlciBSZXdvcmsKICAgICPqs7XthrUgfCAyMDI1LTA4LTE5IHwgTkNSLUswMDAwNTMgfCBNb2RlbCAzUiA2MDYwMS0xLTIgRGVidWdnaW5nCiAgICAj6rO17Ya1IHwgMjAyNS0wOC0xMSB8IE5DUi1LMDAwMDUyIHwgQ29udmVyc2lvbiBmcm9tIE1vZGVsIDMgdG8gTW9kZWwgM1IKICAgICPqs7XthrUgfCAyMDI1LTA4LTA2IHwgTkNSLUswMDAwNTEgfCBFVjI0MCB1bml0ICM0IFNXIFZhbGlkYXRpb24gRmFpbHVyZSBEZWJ1Z2dpbmcKICAgICPqs7XthrUgfCAyMDI1LTA4LTA1IHwgTkNSLUswMDAwNTAgfCBTeXN0ZW0gQ2FydCBSZXdvcmsKICAgICPqs7XthrUgfCAyMDI1LTA3LTEwIHwgTkNSLUswMDAwNDkgfCBQb3NpdGlvbmluZyBBcm0gTEVEIFN0cmlwIE5vbi1jb25mb3JtYW5jZQogICAgI+qzte2GtSB8IDIwMjUtMDYtMjQgfCBOQ1ItSzAwMDA0OCB8IEFkYXB0b3IgSWRlbnRpZmljYXRpb24gYW5kIFJld29yawogICAgI+qzte2GtSB8IDIwMjUtMDYtMjQgfCBOQ1ItSzAwMDA0NyB8IDNSIENvbnRyb2wgQ29uc29sZSBSZXdvcmsgLSBSdWJiZXIgU3RvcHBlcgogICAgI+qzte2GtSB8IDIwMjUtMDUtMTQgfCBOQ1ItSzAwMDA0NSB8IFBvc2l0aW9uaW5nIEFybSBDb2xvci1jb2RlZCBTb2NrZXRzIE5vbi1jb25mb3JtYW5jZQogICAgI+qzte2GtSB8IDIwMjUtMDQtMTggfCBOQ1ItSzAwMDA0NCB8IFJlcGxhY2VtZW50IG9mIGEgcG90ZW50aWFsbHkgZGFtYWdlZCBqb3lzdGljayBpbiBDU1QgQ29udHJvbGxlciBiZWZvcmUKICBjb25kdWN0aW5nIHRoZSBJRUMgNjA2MDEtMSB0ZXN0CiAgICAj6rO17Ya1IHwgMjAyNS0wNC0xMiB8IENBUi0wMDAwMjYgfCBJbnRlcm5hbCBBdWRpdCBGaW5kaW5nICMxOiBSZXdvcmsKICAgICPqs7XthrUgfCAyMDI1LTA0LTA4IHwgTkNSLUswMDAwNDMgfCBVc2FiaWxpdHkgSXNzdWVzIGR1cmluZyBNb2RlbCBUZXN0aW5nCiAgICAj6rO17Ya1IHwgMjAyNS0wNC0wOCB8IE5DUi1LMDAwMDQyIHwgSGVtb2NvbXBhdGliaWxpdHkgVGVzdGluZyBGYWlsdXJlCiAgICAj6rO17Ya1IHwgMjAyNS0wNC0wOCB8IE5DUi1LMDAwMDQxIHwgU2luZ2xlIEJhdGNoIFN0ZXJpbGl6YXRpb24KICAgICPqs7XthrUgfCAyMDI1LTA0LTA3IHwgTkNSLUswMDAwNDAgfCAzUiBDb25zb2xlIFJld29ya3MgLSA2MDYwMQogICAgI+qzte2GtSB8IDIwMjUtMDQtMDQgfCBOQ1ItSzAwMDAzOSB8IEJvYXJkIFN1cHBsaWVyIFJld29yawogICAgI+qzte2GtSB8IDIwMjUtMDMtMTggfCBOQ1ItSzAwMDAzOCB8IDI0QUUwMDMwMDAyQS0xME1BUjI1LTAwMDIgUGFydCBOb24tY29uZm9ybWFuY2UKICAgICPqs7XthrUgfCAyMDI1LTAzLTE4IHwgTkNSLUswMDAwMzcgfCBFVjI0MCByZXdvcmsgdG8gbWF0Y2ggNjA2MDEtMS0yIGRlYnVnZ2luZwogICAgI+qzte2GtSB8IDIwMjUtMDMtMTEgfCBOQ1ItSzAwMDAzNiB8IEJvYXJkIFN1cHBsaWVyIFJld29yawogICAgI+qzte2GtSB8IDIwMjUtMDMtMTEgfCBOQ1ItSzAwMDAzNSB8IEVWUiBHZW4yLjQgQ1NUIENvbnRyb2xsZXIgQm9hcmQgSW5jb21pbmcgSW5zcGVjdGlvbiBOb24tY29uZm9ybWFuY2UKICAgICPqs7XthrUgfCAyMDI1LTAzLTA3IHwgTkNSLUswMDAwMzQgfCBDYXNzZXR0ZSBQYXJ0cyBNYW51ZmFjdHVyaW5nIE5vbi1Db25mcm9tYW5jZQogICAgI+qzte2GtSB8IDIwMjUtMDItMDcgfCBOQ1ItSzAwMDAzMyB8IEVWMjQwIDYwNjAxLTEtMiBEZWJ1Z2dpbmcKICAgICPqs7XthrUgfCAyMDI1LTAyLTA2IHwgTkNSLUswMDAwMzIgfCBTdXBwbGllciBNYW51ZmFjdHVyaW5nIEVycm9yOiAyNEFNMDIzMTAwNEEKICAgICPqs7XthrUgfCAyMDI1LTAyLTA0IHwgTkNSLUswMDAwMzEgfCBFVlIyNDAgNjA2MDEtMS0yIERlYnVnZ2luZwogICAgI+qzte2GtSB8IDIwMjUtMDItMDQgfCBOQ1ItSzAwMDAzMCB8IExvY3RpdGUgNDAxIFN0b3JhZ2UgVGVtcGVyYXR1cmUgTm9uLWNvbmZvcm1hbmNlCiAgICAj6rO17Ya1IHwgMjAyNS0wMS0yMCB8IE5DUi1LMDAwMDI5IHwgM1IgQ1RSTCBDb25zb2xlIGZhc3RlbmVyIGxlbmd0aCBpbnN1ZmZpY2llbmN5CiAgICAj6rO17Ya1IHwgMjAyNS0wMS0yMCB8IE5DUi1LMDAwMDI4IHwgM1IgQ1RSTCBDb25zb2xlIHBhcnRzIHN1cHBsaWVyIG1hbnVmYWN0dXJpbmcgZXJyb3IKICAgICPqs7XthrUgfCAyMDI1LTAxLTEwIHwgTkNSLUswMDAwMjcgfCBCdWNrbGluZyBEZXRlY3Rpb24gU3lzdGVtIERpc3RhbmNlIFJlY2FsaWJyYXRpb24KICAgICPqs7XthrUgfCAyMDI1LTAxLTAzIHwgTkNSLUswMDAwMjYgfCBSJkQgQ2Fzc2V0dGUgQnVpbGQgQ29udmVyc2lvbgogICAgI+qzte2GtSB8IDIwMjQtMTItMzAgfCBOQ1ItSzAwMDAyNSB8IElPIFRlc3RpbmcgRmluZHMKICAgICPqs7XthrUgfCAyMDI0LTEyLTI3IHwgTkNSLUswMDAwMjMgfCBTbGlkZSBMb2NrIFBpbiBhbmQgQmFzZSBIb2xlcwogICAgI+qzte2GtSB8IDIwMjQtMTItMTkgfCBOQ1ItSzAwMDAyMiB8IENhc3NldHRlIExvY2sgQmxvY2sgTm9uLWNvbmZvcm1hbmNlCiAgICAj6rO17Ya1IHwgMjAyNC0xMi0xOCB8IE5DUi1LMDAwMDIxIHwgQ29sbGV0IEJsb2NrIEdXIE5vbmNvbmZvcm1hbmNlCiAgICAj6rO17Ya1IHwgMjAyNC0xMi0xMCB8IE5DUi1LMDAwMDE5IHwgU2luZ2xlLVVzZSBDb21wb25lbnRzIEluY29taW5nIEluc3BlY3Rpb24gTm9uLWNvbmZvcm1hbmNlcwogICAgI+qzte2GtSB8IDIwMjQtMTItMDkgfCBOQ1ItSzAwMDAxOCB8IFNpbmdsZSBVc2UgQ2Fzc2V0dGUgTWFudWZhY3R1cmluZyBEZXZpYXRpb24KICAgICPqs7XthrUgfCAyMDI0LTEyLTA5IHwgTkNSLUswMDAwMTcgfCBHVyBSb3RhdGUgTWFzdGVyIEdlYXIgTm9uY29uZm9ybWFuY2UKICAgICPqs7XthrUgfCAyMDI0LTExLTA4IHwgTkNSLUswMDAwMTYgfCBTaW5nbGUtVXNlIENvbXBvbmVudHMgSW5jb21pbmcgSW5zcGVjdGlvbiBOb24tY29uZm9ybWFuY2VzCiAgICAj6rO17Ya1IHwgMjAyNC0xMC0yOSB8IE5DUi1LMDAwMDE1IHwgRVYyNDAgZm9yIElFQyA2MDYwMS0xIFRlc3RpbmcKICAgICPqs7XthrUgfCAyMDI0LTEwLTI5IHwgTkNSLUswMDAwMTQgfCBMb2N0aXRlLTI0MiBTdG9yYWdlIFRlbXBlcmF0dXJlIFJlcXVpcmVtZW50IERpc2NyZXBhbmN5CiAgICAj6rO17Ya1IHwgMjAyNC0xMC0yMyB8IE5DUi1LMDAwMDEzIHwgRVYyNDAgQmVkc2lkZSBVbml0IEJyZWFrIFN3aXRjaCBNYWxmdW5jdGlvbgogICAgI+qzte2GtSB8IDIwMjQtMTAtMjIgfCBOQ1ItSzAwMDAxMiB8IEVWMjQwIENvbnRyb2wgQ29uc29sZSBJTyBUZXN0aW5nIEZhaWx1cmUKICAgICPqs7XthrUgfCAyMDI0LTEwLTIxIHwgTkNSLUswMDAwMTEgfCBDbGFtcCBwYXJ0cyBzdXBwbGllciBtYW51ZmFjdHVyaW5nIGVycm9yCiAgICAj6rO17Ya1IHwgMjAyNC0xMC0yMSB8IE5DUi1LMDAwMDEwIHwgQ2xhbXAgcGFydCBpbmNvbWluZyBpbnNwZWN0aW9uIG5vbi1jb25mb3JtYW5jZQogICAgI+qzte2GtSB8IDIwMjQtMTAtMjEgfCBOQ1ItSzAwMDAwOSB8IENsYW1wIHBhcnRzIGluY29taW5nIGluc3BlY3Rpb24gZmFpbHVyZSBkdWUgdG8gZHJhd2luZyBlcnJvcnMKICAgICPqs7XthrUgfCAyMDI0LTEwLTIxIHwgTkNSLUswMDAwMDggfCAyNEFNMDEzNDAxNEEgTTggU0NSRVcgU3VwcGxpZXIgSW5zcGVjdGlvbiBEYXRhIEFic2VuY2UKICAgICPqs7XthrUgfCAyMDI0LTEwLTE3IHwgTkNSLUswMDAwMDcgfCBNUC1LMDAwMSBBc3NlbWJseShIYXJuZXNzKQogICAgI+qzte2GtSB8IDIwMjQtMTAtMTcgfCBOQ1ItSzAwMDAwNiB8IE1QLUswMDAxIE1lY2hhbmljYWwgQXNzZW1ibHkgTm9uLWNvbmZvcm1hbmNlCiAgICAj6rO17Ya1IHwgMjAyNC0xMC0xNiB8IE5DUi1LMDAwMDA1IHwgTG9jdGl0ZSA0MDEgU3RvcmFnZSBUZW1wZXJhdHVyZSBOb24tY29uZm9ybWFuY2UKICAgICPqs7XthrUgfCAyMDI0LTEwLTE2IHwgTkNSLUswMDAwMDQgfCAyNEFNMDEzMTIzNEEgTW90b3IgQkwtMSBTdXBwbGllciBJbnNwZWN0aW9uIERhdGEgQWJzZW5jZQogICAgI+qzte2GtSB8IDIwMjQtMDktMjYgfCBDQVItSzAwMDAwMSB8IEluY29taW5nIEluc3BlY3Rpb24gUHJvY2VzcyBEZXZpYXRpb24KICAgICPqs7XthrUgfCAyMDI0LTA5LTAyIHwgTkNSLUswMDAwMDMgfCBFbGVjdHJpY2FsIE9mZi10aGUtU2hlbGYgcGFydHMgaW5jb21pbmcgaW5zcGVjdGlvbiBub25jb25mb3JtYW5jZQogICAgI+qzte2GtSB8IDIwMjQtMDgtMzAgfCBOQ1ItSzAwMDAwMiB8IFN1cHBsaWVyIEluc3BlY3Rpb24gRGF0YSBBYnNlbmNlCiAgICAj6rO17Ya1IHwgMjAyNC0wOC0yOSB8IE5DUi1LMDAwMDAxIHwgU3VwcGxpZXIgSW5zcGVjdGlvbiBEYXRhIFJlc29sdXRpb24gSW5zdWZmaWNpZW5jeQo=
- History Raw Data
- // SYSTEM OPERATION TIMELINE
+http://localhost:8080/#Ly8gU1lTVEVNIE9QRVJBVElPTiBUSU1FTElORQovLyBGT1JNQVQ6IEVRVUlQTUVOVCB8IFlZWVktTU0tREQgfCBUSVRMRSB8IERFU0NSSVBUSU9OCiNVbml0IDEgfCAyMDI2LTA2LTEyIHwgV2lyaW5nIENoYW5nZSBWZXJpZmljYXRpb24gfCBObyBtYWxmdW5jdGlvbiBvY2N1cnJlZCBhZnRlciB3aXJpbmcgY2hhbmdlIChIL1cgU2FmZXR5IGZ1bmN0aW9uIHdvcmtzIHByb3Blcmx5KQoKI1VuaXQgMiB8IDIwMjYtMDYtMDEgfCBTd2l0Y2ggT2ZmIFN0b3AgRmFpbHVyZSB8IEZhaWxlZCB0byBzdG9wIG1vdmVtZW50IHdoZW4gQ29uc29sZSBwb3dlciBzd2l0Y2ggd2FzIHR1cm5lZCBPZmYgZHVyaW5nIG9wZXJhdGlvbiAoSC9XIFNhZmV0eSBub3Qgd29ya2luZywgb25seSBGL1cgU2FmZXR5IGFjdGl2ZSkKCiNVbml0IDMgfCAyMDI1LTAyLTA0IHwgQXNzZW1ibHkgQ29tcGxldGVkIHwgQXNzZW1ibHkgY29tcGxldGVkCiNVbml0IDMgfCAyMDI1LTEyLTA5IHwgSW5zdGFsbCBGL1cgMi4wLjAgfCBGL1cgMi4wLjAgaW5zdGFsbGVkIChFLVN0b3AgZnVuY3Rpb24gaW1wcm92ZWQsIEFDLURDIGFkYXB0ZXIgdHJhY2VhYmlsaXR5IHNlY3VyZWQpCiNVbml0IDMgfCAyMDI1LTEyLTI0IHwgUm9sbGJhY2sgRi9XIDEuMS4xIHwgRi9XIDEuMS4xIHJvbGxiYWNrIGluc3RhbGxhdGlvbgojVW5pdCAzIHwgMjAyNS0xMi0yOSB8IEluc3RhbGwgRi9XIDIuMS4yIHwgRi9XIDIuMS4yIGluc3RhbGxlZCAoRVZSIFN5c3RlbSBNb2RlbCAzUiBtb3ZlbWVudC91c2FiaWxpdHkgaW1wcm92ZWQsIHBhc3NlZCBTUUEpCiNVbml0IDMgfCAyMDI2LTAyLTI4IHwgSW5zdGFsbCBGL1cgMi4xLjMgfCBGL1cgMi4xLjMgaW5zdGFsbGVkIChSZXNvbHZlZCBmcmVlemUgZHVyaW5nIE1DX0YgYW5kIEdXX00gbW9kdWxlcyByZXRyYWN0LCBDb2xsZXQgR3JhYiBpbXByb3ZlZCkKCiNVbml0IDQgfCAyMDI1LTAzLTIxIHwgQXNzZW1ibHkgQ29tcGxldGVkIHwgQXNzZW1ibHkgY29tcGxldGVkCiNVbml0IDQgfCAyMDI1LTA4LTIwIHwgSW5zdGFsbCBGL1cgMi4wLjAgfCBGL1cgMi4wLjAgaW5zdGFsbGVkIChFLVN0b3AgZnVuY3Rpb24gaW1wcm92ZWQsIEFDLURDIGFkYXB0ZXIgdHJhY2VhYmlsaXR5IHNlY3VyZWQpCiNVbml0IDQgfCAyMDI1LTEyLTEyIHwgSW5zdGFsbCBGL1cgMi4xLjIgfCBGL1cgMi4xLjIgaW5zdGFsbGVkIChFVlIgU3lzdGVtIE1vZGVsIDNSIG1vdmVtZW50L3VzYWJpbGl0eSBpbXByb3ZlZCwgcGFzc2VkIFNRQSkKI1VuaXQgNCB8IDIwMjYtMDUtMjIgfCBJbnN0YWxsIEYvVyAyLjEuMyB8IEYvVyAyLjEuMyBpbnN0YWxsZWQgKFJlc29sdmVkIGZyZWV6ZSBkdXJpbmcgTUNfRiBhbmQgR1dfTSBtb2R1bGVzIHJldHJhY3QsIENvbGxldCBHcmFiIGltcHJvdmVkKQojVW5pdCA0IHwgMjAyNi0wNi0wMSB8IFN3aXRjaCBPZmYgU3RvcCBGYWlsdXJlIHwgRmFpbGVkIHRvIHN0b3AgbW92ZW1lbnQgd2hlbiBDb25zb2xlIHBvd2VyIHN3aXRjaCB3YXMgdHVybmVkIE9mZiBkdXJpbmcgb3BlcmF0aW9uIChIL1cgU2FmZXR5IG5vdCB3b3JraW5nLCBvbmx5IEYvVyBTYWZldHkgYWN0aXZlKQoKI0NvbW1vbiB8IDIwMjYtMDYtMDEgfCBDYWJsZSBSZW1vdmFsIFRlc3QgfCBWZXJpZmllZCBub3JtYWwgc3RvcCB1cG9uIEludGVyZmFjZSBDYWJsZSByZW1vdmFsIChGL1cgU2FmZXR5IHdvcmtpbmcgbm9ybWFsbHkpCgojVW5pdCAyIHwgMjAyNi0wMS0zMCB8IE5DUi1LMDAwMDY0IHwgQ29udHJvbCBDb25zb2xlICMyIFJld29yawojVW5pdCAyIHwgMjAyNC0xMi0xMCB8IE5DUi1LMDAwMDIwIHwgRVYyNDAjMiBNYW51ZmFjdHVyaW5nIE5vbi1jb25mb3JtYW5jZQojVW5pdCAzIHwgMjAyNi0wNi0wNCB8IE5DUi1LMDAwMDY4IHwgRVZSIFVuaXQgIzMg4oCTIFNsb3cgTW9kdWxlIE1vdmVtZW50IER1cmluZyAxIG1tIENvbW1hbmQKI1VuaXQgMyB8IDIwMjYtMDYtMDIgfCBOQ1ItSzAwMDA2NyB8IEVWUiBVbml0IDMgU3lzdGVtIENhcnQgUmV3b3JrCiNVbml0IDMgfCAyMDI1LTEyLTA1IHwgTkNSLUswMDAwNTggfCBFVlIgVW5pdCAzIGFuZCBVbml0IDQgU3lzdGVtIENhcnQgUmV3b3JrCiNVbml0IDQgfCAyMDI2LTA1LTI3IHwgTkNSLUswMDAwNjYgfCBFVlIgVW5pdCA0IEFibm9ybWFsIEJlaGF2aW9yCiNVbml0IDQgfCAyMDI2LTAxLTIxIHwgTkNSLUswMDAwNjMgfCBFVlIgVW5pdCA0IEJlZHNpZGUgVW5pdCBJbnZlc3RpZ2F0aW9uIGFuZCBSZW1vdGUgQ29uc29sZSBSZXdvcmsKI1VuaXQgNCB8IDIwMjUtMTItMDUgfCBOQ1ItSzAwMDA1OCB8IEVWUiBVbml0IDMgYW5kIFVuaXQgNCBTeXN0ZW0gQ2FydCBSZXdvcmsKI1VuaXQgNCB8IDIwMjUtMDktMTAgfCBOQ1ItSzAwMDA1NSB8IEVWUiBVbml0IDQgT3ZlcmN1cnJlbnQKI1VuaXQgNCB8IDIwMjUtMDUtMjIgfCBOQ1ItSzAwMDA0NiB8IEVWMjQwICM0IENBTiBDb21tdW5pY2F0aW9uIEZhaWx1cmUgZHVlIHRvIE5DUi1LMDAwMDQ1IHJld29yawojQ29tbW9uIHwgMjAyNi0wNC0yOSB8IE5DUi1LMDAwMDY1IHwgTW90b3IgUG93ZXIgTG9zcwojQ29tbW9uIHwgMjAyNi0wMS0wNiB8IE5DUi1LMDAwMDYyIHwgVFAtSzAwMTcgTW9kZWwgM1IgRVAgRXhlY3V0aW9uIE5vbi1jb25mb3JtYW5jZXMKI0NvbW1vbiB8IDIwMjUtMTItMjQgfCBOQ1ItSzAwMDA2MSB8IE5vbi1jb25mb3JtYW5jZSBvZiBJQzI0MCBDYXNzZXR0ZXMKI0NvbW1vbiB8IDIwMjUtMTItMjIgfCBOQ1ItSzAwMDA2MCB8IFN0ZXJpbGl6ZWQgSW52ZW50b3J5IEVPIEdBUyBDaGVtaWNhbCBJbmRpY2F0b3IgSW5jb25zaXN0ZW5jeQojQ29tbW9uIHwgMjAyNS0xMi0wNSB8IE5DUi1LMDAwMDU5IHwgTGFiZWxpbmcgUmV3b3JrCiNDb21tb24gfCAyMDI1LTExLTE3IHwgTkNSLUswMDAwNTcgfCBbRVZTMjQwUl0gRFZNIE1vZHVsZSBOby40IFRyYW5zbGF0aW9uLUFyZWEgRGV2aWF0aW9uIGFuZCBPdmVyY3VycmVudCBJc3N1ZQojQ29tbW9uIHwgMjAyNS0xMS0wNyB8IE5DUi1LMDAwMDU2IHwgRS1TdG9wIEluY29uc2lzdGVuY3kKI0NvbW1vbiB8IDIwMjUtMDktMDIgfCBOQ1ItSzAwMDA1NCB8IEFkYXB0ZXIgUmV3b3JrCiNDb21tb24gfCAyMDI1LTA4LTE5IHwgTkNSLUswMDAwNTMgfCBNb2RlbCAzUiA2MDYwMS0xLTIgRGVidWdnaW5nCiNDb21tb24gfCAyMDI1LTA4LTExIHwgTkNSLUswMDAwNTIgfCBDb252ZXJzaW9uIGZyb20gTW9kZWwgMyB0byBNb2RlbCAzUgojQ29tbW9uIHwgMjAyNS0wOC0wNiB8IE5DUi1LMDAwMDUxIHwgRVYyNDAgdW5pdCAjNCBTVyBWYWxpZGF0aW9uIEZhaWx1cmUgRGVidWdnaW5nCiNDb21tb24gfCAyMDI1LTA4LTA1IHwgTkNSLUswMDAwNTAgfCBTeXN0ZW0gQ2FydCBSZXdvcmsKI0NvbW1vbiB8IDIwMjUtMDctMTAgfCBOQ1ItSzAwMDA0OSB8IFBvc2l0aW9uaW5nIEFybSBMRUQgU3RyaXAgTm9uLWNvbmZvcm1hbmNlCiNDb21tb24gfCAyMDI1LTA2LTI0IHwgTkNSLUswMDAwNDggfCBBZGFwdG9yIElkZW50aWZpY2F0aW9uIGFuZCBSZXdvcmsKI0NvbW1vbiB8IDIwMjUtMDYtMjQgfCBOQ1ItSzAwMDA0NyB8IDNSIENvbnRyb2wgQ29uc29sZSBSZXdvcmsgLSBSdWJiZXIgU3RvcHBlcgojQ29tbW9uIHwgMjAyNS0wNS0xNCB8IE5DUi1LMDAwMDQ1IHwgUG9zaXRpb25pbmcgQXJtIENvbG9yLWNvZGVkIFNvY2tldHMgTm9uLWNvbmZvcm1hbmNlCiNDb21tb24gfCAyMDI1LTA0LTE4IHwgTkNSLUswMDAwNDQgfCBSZXBsYWNlbWVudCBvZiBhIHBvdGVudGlhbGx5IGRhbWFnZWQgam95c3RpY2sgaW4gQ1NUIENvbnRyb2xsZXIgYmVmb3JlIGNvbmR1Y3RpbmcgdGhlIElFQyA2MDYwMS0xIHRlc3QKI0NvbW1vbiB8IDIwMjUtMDQtMTIgfCBDQVItMDAwMDI2IHwgSW50ZXJuYWwgQXVkaXQgRmluZGluZyAjMTogUmV3b3JrCiNDb21tb24gfCAyMDI1LTA0LTA4IHwgTkNSLUswMDAwNDMgfCBVc2FiaWxpdHkgSXNzdWVzIGR1cmluZyBNb2RlbCBUZXN0aW5nCiNDb21tb24gfCAyMDI1LTA0LTA4IHwgTkNSLUswMDAwNDIgfCBIZW1vY29tcGF0aWJpbGl0eSBUZXN0aW5nIEZhaWx1cmUKI0NvbW1vbiB8IDIwMjUtMDQtMDggfCBOQ1ItSzAwMDA0MSB8IFNpbmdsZSBCYXRjaCBTdGVyaWxpemF0aW9uCiNDb21tb24gfCAyMDI1LTA0LTA3IHwgTkNSLUswMDAwNDAgfCAzUiBDb25zb2xlIFJld29ya3MgLSA2MDYwMQojQ29tbW9uIHwgMjAyNS0wNC0wNCB8IE5DUi1LMDAwMDM5IHwgQm9hcmQgU3VwcGxpZXIgUmV3b3JrCiNDb21tb24gfCAyMDI1LTAzLTE4IHwgTkNSLUswMDAwMzggfCAyNEFFMDAzMDAwMkEtMTBNQVIyNS0wMDAyIFBhcnQgTm9uLWNvbmZvcm1hbmNlCiNDb21tb24gfCAyMDI1LTAzLTE4IHwgTkNSLUswMDAwMzcgfCBFVjI0MCByZXdvcmsgdG8gbWF0Y2ggNjA2MDEtMS0yIGRlYnVnZ2luZwojQ29tbW9uIHwgMjAyNS0wMy0xMSB8IE5DUi1LMDAwMDM2IHwgQm9hcmQgU3VwcGxpZXIgUmV3b3JrCiNDb21tb24gfCAyMDI1LTAzLTExIHwgTkNSLUswMDAwMzUgfCBFVlIgR2VuMi40IENTVCBDb250cm9sbGVyIEJvYXJkIEluY29taW5nIEluc3BlY3Rpb24gTm9uLWNvbmZvcm1hbmNlCiNDb21tb24gfCAyMDI1LTAzLTA3IHwgTkNSLUswMDAwMzQgfCBDYXNzZXR0ZSBQYXJ0cyBNYW51ZmFjdHVyaW5nIE5vbi1Db25mcm9tYW5jZQojQ29tbW9uIHwgMjAyNS0wMi0wNyB8IE5DUi1LMDAwMDMzIHwgRVYyNDAgNjA2MDEtMS0yIERlYnVnZ2luZwojQ29tbW9uIHwgMjAyNS0wMi0wNiB8IE5DUi1LMDAwMDMyIHwgU3VwcGxpZXIgTWFudWZhY3R1cmluZyBFcnJvcjogMjRBTTAyMzEwMDRBCiNDb21tb24gfCAyMDI1LTAyLTA0IHwgTkNSLUswMDAwMzEgfCBFVlIyNDAgNjA2MDEtMS0yIERlYnVnZ2luZwojQ29tbW9uIHwgMjAyNS0wMi0wNCB8IE5DUi1LMDAwMDMwIHwgTG9jdGl0ZSA0MDEgU3RvcmFnZSBUZW1wZXJhdHVyZSBOb24tY29uZm9ybWFuY2UKI0NvbW1vbiB8IDIwMjUtMDEtMjAgfCBOQ1ItSzAwMDAyOSB8IDNSIENUUkwgQ29uc29sZSBmYXN0ZW5lciBsZW5ndGggaW5zdWZmaWNpZW5jeQojQ29tbW9uIHwgMjAyNS0wMS0yMCB8IE5DUi1LMDAwMDI4IHwgM1IgQ1RSTCBDb25zb2xlIHBhcnRzIHN1cHBsaWVyIG1hbnVmYWN0dXJpbmcgZXJyb3IKI0NvbW1vbiB8IDIwMjUtMDEtMTAgfCBOQ1ItSzAwMDAyNyB8IEJ1Y2tsaW5nIERldGVjdGlvbiBTeXN0ZW0gRGlzdGFuY2UgUmVjYWxpYnJhdGlvbgojQ29tbW9uIHwgMjAyNS0wMS0wMyB8IE5DUi1LMDAwMDI2IHwgUiZEIENhc3NldHRlIEJ1aWxkIENvbnZlcnNpb24KI0NvbW1vbiB8IDIwMjQtMTItMzAgfCBOQ1ItSzAwMDAyNSB8IElPIFRlc3RpbmcgRmluZHMKI0NvbW1vbiB8IDIwMjQtMTItMjcgfCBOQ1ItSzAwMDAyMyB8IFNsaWRlIExvY2sgUGluIGFuZCBCYXNlIEhvbGVzCiNDb21tb24gfCAyMDI0LTEyLTE5IHwgTkNSLUswMDAwMjIgfCBDYXNzZXR0ZSBMb2NrIEJsb2NrIE5vbi1jb25mb3JtYW5jZQojQ29tbW9uIHwgMjAyNC0xMi0xOCB8IE5DUi1LMDAwMDIxIHwgQ29sbGV0IEJsb2NrIEdXIE5vbmNvbmZvcm1hbmNlCiNDb21tb24gfCAyMDI0LTEyLTEwIHwgTkNSLUswMDAwMTkgfCBTaW5nbGUtVXNlIENvbXBvbmVudHMgSW5jb21pbmcgSW5zcGVjdGlvbiBOb24tY29uZm9ybWFuY2VzCiNDb21tb24gfCAyMDI0LTEyLTA5IHwgTkNSLUswMDAwMTggfCBTaW5nbGUgVXNlIENhc3NldHRlIE1hbnVmYWN0dXJpbmcgRGV2aWF0aW9uCiNDb21tb24gfCAyMDI0LTEyLTA5IHwgTkNSLUswMDAwMTcgfCBHVyBSb3RhdGUgTWFzdGVyIEdlYXIgTm9uY29uZm9ybWFuY2UKI0NvbW1vbiB8IDIwMjQtMTEtMDggfCBOQ1ItSzAwMDAxNiB8IFNpbmdsZS1Vc2UgQ29tcG9uZW50cyBJbmNvbWluZyBJbnNwZWN0aW9uIE5vbi1jb25mb3JtYW5jZXMKI0NvbW1vbiB8IDIwMjQtMTAtMjkgfCBOQ1ItSzAwMDAxNSB8IEVWMjQwIGZvciBJRUMgNjA2MDEtMSBUZXN0aW5nCiNDb21tb24gfCAyMDI0LTEwLTI5IHwgTkNSLUswMDAwMTQgfCBMb2N0aXRlLTI0MiBTdG9yYWdlIFRlbXBlcmF0dXJlIFJlcXVpcmVtZW50IERpc2NyZXBhbmN5CiNDb21tb24gfCAyMDI0LTEwLTIzIHwgTkNSLUswMDAwMTMgfCBFVjI0MCBCZWRzaWRlIFVuaXQgQnJlYWsgU3dpdGNoIE1hbGZ1bmN0aW9uCiNDb21tb24gfCAyMDI0LTEwLTIyIHwgTkNSLUswMDAwMTIgfCBFVjI0MCBDb250cm9sIENvbnNvbGUgSU8gVGVzdGluZyBGYWlsdXJlCiNDb21tb24gfCAyMDI0LTEwLTIxIHwgTkNSLUswMDAwMTEgfCBDbGFtcCBwYXJ0cyBzdXBwbGllciBtYW51ZmFjdHVyaW5nIGVycm9yCiNDb21tb24gfCAyMDI0LTEwLTIxIHwgTkNSLUswMDAwMTAgfCBDbGFtcCBwYXJ0IGluY29taW5nIGluc3BlY3Rpb24gbm9uLWNvbmZvcm1hbmNlCiNDb21tb24gfCAyMDI0LTEwLTIxIHwgTkNSLUswMDAwMDkgfCBDbGFtcCBwYXJ0cyBpbmNvbWluZyBpbnNwZWN0aW9uIGZhaWx1cmUgZHVlIHRvIGRyYXdpbmcgZXJyb3JzCiNDb21tb24gfCAyMDI0LTEwLTIxIHwgTkNSLUswMDAwMDggfCAyNEFNMDEzNDAxNEEgTTggU0NSRVcgU3VwcGxpZXIgSW5zcGVjdGlvbiBEYXRhIEFic2VuY2UKI0NvbW1vbiB8IDIwMjQtMTAtMTcgfCBOQ1ItSzAwMDAwNyB8IE1QLUswMDAxIEFzc2VtYmx5KEhhcm5lc3MpCiNDb21tb24gfCAyMDI0LTEwLTE3IHwgTkNSLUswMDAwMDYgfCBNUC1LMDAwMSBNZWNoYW5pY2FsIEFzc2VtYmx5IE5vbi1jb25mb3JtYW5jZQojQ29tbW9uIHwgMjAyNC0xMC0xNiB8IE5DUi1LMDAwMDA1IHwgTG9jdGl0ZSA0MDEgU3RvcmFnZSBUZW1wZXJhdHVyZSBOb24tY29uZm9ybWFuY2UKI0NvbW1vbiB8IDIwMjQtMTAtMTYgfCBOQ1ItSzAwMDAwNCB8IDI0QU0wMTMxMjM0QSBNb3RvciBCTC0xIFN1cHBsaWVyIEluc3BlY3Rpb24gRGF0YSBBYnNlbmNlCiNDb21tb24gfCAyMDI0LTA5LTI2IHwgQ0FSLUswMDAwMDEgfCBJbmNvbWluZyBJbnNwZWN0aW9uIFByb2Nlc3MgRGV2aWF0aW9uCiNDb21tb24gfCAyMDI0LTA5LTAyIHwgTkNSLUswMDAwMDMgfCBFbGVjdHJpY2FsIE9mZi10aGUtU2hlbGYgcGFydHMgaW5jb21pbmcgaW5zcGVjdGlvbiBub25jb25mb3JtYW5jZQojQ29tbW9uIHwgMjAyNC0wOC0zMCB8IE5DUi1LMDAwMDAyIHwgU3VwcGxpZXIgSW5zcGVjdGlvbiBEYXRhIEFic2VuY2UKI0NvbW1vbiB8IDIwMjQtMDgtMjkgfCBOQ1ItSzAwMDAwMSB8IFN1cHBsaWVyIEluc3BlY3Rpb24gRGF0YSBSZXNvbHV0aW9uIEluc3VmZmljaWVuY3k=
+History Raw Data
+    // SYSTEM OPERATION TIMELINE
     // FORMAT: EQUIPMENT | YYYY-MM-DD | TITLE | DESCRIPTION
-    #1호기 | 2026-06-12 | 배선변경 확인 | 배선변경 후 오동작 발생하지 않음 (H/W Safety 기능 잘 동작)
+    #Unit 1 | 2026-06-12 | Wiring Change Verification | No malfunction occurred after wiring change (H/W Safety function works properly)
 
-    #2호기 | 2026-06-01 | 스위치 Off 정지 실패 | 조작 중 Console 파워스위치 Off 시 이동 정지 실패 (H/W Safety 미동작,
-  F/W Safety만 작동)
+    #Unit 2 | 2026-06-01 | Switch Off Stop Failure | Failed to stop movement when Console power switch was turned Off during operation (H/W Safety not working, only F/W Safety active)
 
-    #3호기 | 2025-02-04 | 조립완료 | 조립 완료
-    #3호기 | 2025-12-09 | F/W 2.0.0 설치 | F/W 2.0.0 설치 (E-Stop 기능 개선, AC-DC 어댑터 추적성 확보)
-    #3호기 | 2025-12-24 | F/W 1.1.1 설치 | F/W 1.1.1 롤백 설치
-    #3호기 | 2025-12-29 | F/W 2.1.2 설치 | F/W 2.1.2 설치 (EVR System Model 3R 움직임/사용성 개선, SQA 통과)
-    #3호기 | 2026-02-28 | F/W 2.1.3 설치 | F/W 2.1.3 설치 (MC_F 및 GW_M 모듈 Retract 시 멈춤 해결, Collet Grab 개선)
+    #Unit 3 | 2025-02-04 | Assembly Completed | Assembly completed
+    #Unit 3 | 2025-12-09 | Install F/W 2.0.0 | F/W 2.0.0 installed (E-Stop function improved, AC-DC adapter traceability secured)
+    #Unit 3 | 2025-12-24 | Rollback F/W 1.1.1 | F/W 1.1.1 rollback installation
+    #Unit 3 | 2025-12-29 | Install F/W 2.1.2 | F/W 2.1.2 installed (EVR System Model 3R movement/usability improved, passed SQA)
+    #Unit 3 | 2026-02-28 | Install F/W 2.1.3 | F/W 2.1.3 installed (Resolved freeze during MC_F and GW_M modules retract, Collet Grab improved)
 
-    #4호기 | 2025-03-21 | 조립완료 | 조립 완료
-    #4호기 | 2025-08-20 | F/W 2.0.0 설치 | F/W 2.0.0 설치 (E-Stop 기능 개선, AC-DC 어댑터 추적성 확보)
-    #4호기 | 2025-12-12 | F/W 2.1.2 설치 | F/W 2.1.2 설치 (EVR System Model 3R 움직임/사용성 개선, SQA 통과)
-    #4호기 | 2026-05-22 | F/W 2.1.3 설치 | F/W 2.1.3 설치 (MC_F 및 GW_M 모듈 Retract 시 멈춤 해결, Collet Grab 개선)
-    #4호기 | 2026-06-01 | 스위치 Off 정지 실패 | 조작 중 Console 파워스위치 Off 시 이동 정지 실패 (H/W Safety 미동작,
-  F/W Safety만 작동)
+    #Unit 4 | 2025-03-21 | Assembly Completed | Assembly completed
+    #Unit 4 | 2025-08-20 | Install F/W 2.0.0 | F/W 2.0.0 installed (E-Stop function improved, AC-DC adapter traceability secured)
+    #Unit 4 | 2025-12-12 | Install F/W 2.1.2 | F/W 2.1.2 installed (EVR System Model 3R movement/usability improved, passed SQA)
+    #Unit 4 | 2026-05-22 | Install F/W 2.1.3 | F/W 2.1.3 installed (Resolved freeze during MC_F and GW_M modules retract, Collet Grab improved)
+    #Unit 4 | 2026-06-01 | Switch Off Stop Failure | Failed to stop movement when Console power switch was turned Off during operation (H/W Safety not working, only F/W Safety active)
 
-    #공통 | 2026-06-01 | 케이블 제거 테스트 | Interface Cable 제거 시 정상 정지 확인 (F/W Safety 정상 작동)
+    #Common | 2026-06-01 | Cable Removal Test | Verified normal stop upon Interface Cable removal (F/W Safety working normally)
 
-    #2호기 | 2026-01-30 | NCR-K000064 | Control Console #2 Rework
-    #2호기 | 2024-12-10 | NCR-K000020 | EV240#2 Manufacturing Non-conformance
-    #3호기 | 2026-06-04 | NCR-K000068 | EVR Unit #3 – Slow Module Movement During 1 mm Command
-    #3호기 | 2026-06-02 | NCR-K000067 | EVR Unit 3 System Cart Rework
-    #3호기 | 2025-12-05 | NCR-K000058 | EVR Unit 3 and Unit 4 System Cart Rework
-    #4호기 | 2026-05-27 | NCR-K000066 | EVR Unit 4 Abnormal Behavior
-    #4호기 | 2026-01-21 | NCR-K000063 | EVR Unit 4 Bedside Unit Investigation and Remote Console Rework
-    #4호기 | 2025-12-05 | NCR-K000058 | EVR Unit 3 and Unit 4 System Cart Rework
-    #4호기 | 2025-09-10 | NCR-K000055 | EVR Unit 4 Overcurrent
-    #4호기 | 2025-05-22 | NCR-K000046 | EV240 #4 CAN Communication Failure due to NCR-K000045 rework
-    #공통 | 2026-04-29 | NCR-K000065 | Motor Power Loss
-    #공통 | 2026-01-06 | NCR-K000062 | TP-K0017 Model 3R EP Execution Non-conformances
-    #공통 | 2025-12-24 | NCR-K000061 | Non-conformance of IC240 Cassettes
-    #공통 | 2025-12-22 | NCR-K000060 | Sterilized Inventory EO GAS Chemical Indicator Inconsistency
-    #공통 | 2025-12-05 | NCR-K000059 | Labeling Rework
-    #공통 | 2025-11-17 | NCR-K000057 | [EVS240R] DVM Module No.4 Translation-Area Deviation and Overcurrent Issue
-    #공통 | 2025-11-07 | NCR-K000056 | E-Stop Inconsistency
-    #공통 | 2025-09-02 | NCR-K000054 | Adapter Rework
-    #공통 | 2025-08-19 | NCR-K000053 | Model 3R 60601-1-2 Debugging
-    #공통 | 2025-08-11 | NCR-K000052 | Conversion from Model 3 to Model 3R
-    #공통 | 2025-08-06 | NCR-K000051 | EV240 unit #4 SW Validation Failure Debugging
-    #공통 | 2025-08-05 | NCR-K000050 | System Cart Rework
-    #공통 | 2025-07-10 | NCR-K000049 | Positioning Arm LED Strip Non-conformance
-    #공통 | 2025-06-24 | NCR-K000048 | Adaptor Identification and Rework
-    #공통 | 2025-06-24 | NCR-K000047 | 3R Control Console Rework - Rubber Stopper
-    #공통 | 2025-05-14 | NCR-K000045 | Positioning Arm Color-coded Sockets Non-conformance
-    #공통 | 2025-04-18 | NCR-K000044 | Replacement of a potentially damaged joystick in CST Controller before
-  conducting the IEC 60601-1 test
-    #공통 | 2025-04-12 | CAR-000026 | Internal Audit Finding #1: Rework
-    #공통 | 2025-04-08 | NCR-K000043 | Usability Issues during Model Testing
-    #공통 | 2025-04-08 | NCR-K000042 | Hemocompatibility Testing Failure
-    #공통 | 2025-04-08 | NCR-K000041 | Single Batch Sterilization
-    #공통 | 2025-04-07 | NCR-K000040 | 3R Console Reworks - 60601
-    #공통 | 2025-04-04 | NCR-K000039 | Board Supplier Rework
-    #공통 | 2025-03-18 | NCR-K000038 | 24AE0030002A-10MAR25-0002 Part Non-conformance
-    #공통 | 2025-03-18 | NCR-K000037 | EV240 rework to match 60601-1-2 debugging
-    #공통 | 2025-03-11 | NCR-K000036 | Board Supplier Rework
-    #공통 | 2025-03-11 | NCR-K000035 | EVR Gen2.4 CST Controller Board Incoming Inspection Non-conformance
-    #공통 | 2025-03-07 | NCR-K000034 | Cassette Parts Manufacturing Non-Confromance
-    #공통 | 2025-02-07 | NCR-K000033 | EV240 60601-1-2 Debugging
-    #공통 | 2025-02-06 | NCR-K000032 | Supplier Manufacturing Error: 24AM0231004A
-    #공통 | 2025-02-04 | NCR-K000031 | EVR240 60601-1-2 Debugging
-    #공통 | 2025-02-04 | NCR-K000030 | Loctite 401 Storage Temperature Non-conformance
-    #공통 | 2025-01-20 | NCR-K000029 | 3R CTRL Console fastener length insufficiency
-    #공통 | 2025-01-20 | NCR-K000028 | 3R CTRL Console parts supplier manufacturing error
-    #공통 | 2025-01-10 | NCR-K000027 | Buckling Detection System Distance Recalibration
-    #공통 | 2025-01-03 | NCR-K000026 | R&D Cassette Build Conversion
-    #공통 | 2024-12-30 | NCR-K000025 | IO Testing Finds
-    #공통 | 2024-12-27 | NCR-K000023 | Slide Lock Pin and Base Holes
-    #공통 | 2024-12-19 | NCR-K000022 | Cassette Lock Block Non-conformance
-    #공통 | 2024-12-18 | NCR-K000021 | Collet Block GW Nonconformance
-    #공통 | 2024-12-10 | NCR-K000019 | Single-Use Components Incoming Inspection Non-conformances
-    #공통 | 2024-12-09 | NCR-K000018 | Single Use Cassette Manufacturing Deviation
-    #공통 | 2024-12-09 | NCR-K000017 | GW Rotate Master Gear Nonconformance
-    #공통 | 2024-11-08 | NCR-K000016 | Single-Use Components Incoming Inspection Non-conformances
-    #공통 | 2024-10-29 | NCR-K000015 | EV240 for IEC 60601-1 Testing
-    #공통 | 2024-10-29 | NCR-K000014 | Loctite-242 Storage Temperature Requirement Discrepancy
-    #공통 | 2024-10-23 | NCR-K000013 | EV240 Bedside Unit Break Switch Malfunction
-    #공통 | 2024-10-22 | NCR-K000012 | EV240 Control Console IO Testing Failure
-    #공통 | 2024-10-21 | NCR-K000011 | Clamp parts supplier manufacturing error
-    #공통 | 2024-10-21 | NCR-K000010 | Clamp part incoming inspection non-conformance
-    #공통 | 2024-10-21 | NCR-K000009 | Clamp parts incoming inspection failure due to drawing errors
-    #공통 | 2024-10-21 | NCR-K000008 | 24AM0134014A M8 SCREW Supplier Inspection Data Absence
-    #공통 | 2024-10-17 | NCR-K000007 | MP-K0001 Assembly(Harness)
-    #공통 | 2024-10-17 | NCR-K000006 | MP-K0001 Mechanical Assembly Non-conformance
-    #공통 | 2024-10-16 | NCR-K000005 | Loctite 401 Storage Temperature Non-conformance
-    #공통 | 2024-10-16 | NCR-K000004 | 24AM0131234A Motor BL-1 Supplier Inspection Data Absence
-    #공통 | 2024-09-26 | CAR-K000001 | Incoming Inspection Process Deviation
-    #공통 | 2024-09-02 | NCR-K000003 | Electrical Off-the-Shelf parts incoming inspection nonconformance
-    #공통 | 2024-08-30 | NCR-K000002 | Supplier Inspection Data Absence
-    #공통 | 2024-08-29 | NCR-K000001 | Supplier Inspection Data Resolution Insufficiency
+    #Unit 2 | 2026-01-30 | NCR-K000064 | Control Console #2 Rework
+    #Unit 2 | 2024-12-10 | NCR-K000020 | EV240#2 Manufacturing Non-conformance
+    #Unit 3 | 2026-06-04 | NCR-K000068 | EVR Unit #3 – Slow Module Movement During 1 mm Command
+    #Unit 3 | 2026-06-02 | NCR-K000067 | EVR Unit 3 System Cart Rework
+    #Unit 3 | 2025-12-05 | NCR-K000058 | EVR Unit 3 and Unit 4 System Cart Rework
+    #Unit 4 | 2026-05-27 | NCR-K000066 | EVR Unit 4 Abnormal Behavior
+    #Unit 4 | 2026-01-21 | NCR-K000063 | EVR Unit 4 Bedside Unit Investigation and Remote Console Rework
+    #Unit 4 | 2025-12-05 | NCR-K000058 | EVR Unit 3 and Unit 4 System Cart Rework
+    #Unit 4 | 2025-09-10 | NCR-K000055 | EVR Unit 4 Overcurrent
+    #Unit 4 | 2025-05-22 | NCR-K000046 | EV240 #4 CAN Communication Failure due to NCR-K000045 rework
+    #Common | 2026-04-29 | NCR-K000065 | Motor Power Loss
+    #Common | 2026-01-06 | NCR-K000062 | TP-K0017 Model 3R EP Execution Non-conformances
+    #Common | 2025-12-24 | NCR-K000061 | Non-conformance of IC240 Cassettes
+    #Common | 2025-12-22 | NCR-K000060 | Sterilized Inventory EO GAS Chemical Indicator Inconsistency
+    #Common | 2025-12-05 | NCR-K000059 | Labeling Rework
+    #Common | 2025-11-17 | NCR-K000057 | [EVS240R] DVM Module No.4 Translation-Area Deviation and Overcurrent Issue
+    #Common | 2025-11-07 | NCR-K000056 | E-Stop Inconsistency
+    #Common | 2025-09-02 | NCR-K000054 | Adapter Rework
+    #Common | 2025-08-19 | NCR-K000053 | Model 3R 60601-1-2 Debugging
+    #Common | 2025-08-11 | NCR-K000052 | Conversion from Model 3 to Model 3R
+    #Common | 2025-08-06 | NCR-K000051 | EV240 unit #4 SW Validation Failure Debugging
+    #Common | 2025-08-05 | NCR-K000050 | System Cart Rework
+    #Common | 2025-07-10 | NCR-K000049 | Positioning Arm LED Strip Non-conformance
+    #Common | 2025-06-24 | NCR-K000048 | Adaptor Identification and Rework
+    #Common | 2025-06-24 | NCR-K000047 | 3R Control Console Rework - Rubber Stopper
+    #Common | 2025-05-14 | NCR-K000045 | Positioning Arm Color-coded Sockets Non-conformance
+    #Common | 2025-04-18 | NCR-K000044 | Replacement of a potentially damaged joystick in CST Controller before conducting the IEC 60601-1 test
+    #Common | 2025-04-12 | CAR-000026 | Internal Audit Finding #1: Rework
+    #Common | 2025-04-08 | NCR-K000043 | Usability Issues during Model Testing
+    #Common | 2025-04-08 | NCR-K000042 | Hemocompatibility Testing Failure
+    #Common | 2025-04-08 | NCR-K000041 | Single Batch Sterilization
+    #Common | 2025-04-07 | NCR-K000040 | 3R Console Reworks - 60601
+    #Common | 2025-04-04 | NCR-K000039 | Board Supplier Rework
+    #Common | 2025-03-18 | NCR-K000038 | 24AE0030002A-10MAR25-0002 Part Non-conformance
+    #Common | 2025-03-18 | NCR-K000037 | EV240 rework to match 60601-1-2 debugging
+    #Common | 2025-03-11 | NCR-K000036 | Board Supplier Rework
+    #Common | 2025-03-11 | NCR-K000035 | EVR Gen2.4 CST Controller Board Incoming Inspection Non-conformance
+    #Common | 2025-03-07 | NCR-K000034 | Cassette Parts Manufacturing Non-Confromance
+    #Common | 2025-02-07 | NCR-K000033 | EV240 60601-1-2 Debugging
+    #Common | 2025-02-06 | NCR-K000032 | Supplier Manufacturing Error: 24AM0231004A
+    #Common | 2025-02-04 | NCR-K000031 | EVR240 60601-1-2 Debugging
+    #Common | 2025-02-04 | NCR-K000030 | Loctite 401 Storage Temperature Non-conformance
+    #Common | 2025-01-20 | NCR-K000029 | 3R CTRL Console fastener length insufficiency
+    #Common | 2025-01-20 | NCR-K000028 | 3R CTRL Console parts supplier manufacturing error
+    #Common | 2025-01-10 | NCR-K000027 | Buckling Detection System Distance Recalibration
+    #Common | 2025-01-03 | NCR-K000026 | R&D Cassette Build Conversion
+    #Common | 2024-12-30 | NCR-K000025 | IO Testing Finds
+    #Common | 2024-12-27 | NCR-K000023 | Slide Lock Pin and Base Holes
+    #Common | 2024-12-19 | NCR-K000022 | Cassette Lock Block Non-conformance
+    #Common | 2024-12-18 | NCR-K000021 | Collet Block GW Nonconformance
+    #Common | 2024-12-10 | NCR-K000019 | Single-Use Components Incoming Inspection Non-conformances
+    #Common | 2024-12-09 | NCR-K000018 | Single Use Cassette Manufacturing Deviation
+    #Common | 2024-12-09 | NCR-K000017 | GW Rotate Master Gear Nonconformance
+    #Common | 2024-11-08 | NCR-K000016 | Single-Use Components Incoming Inspection Non-conformances
+    #Common | 2024-10-29 | NCR-K000015 | EV240 for IEC 60601-1 Testing
+    #Common | 2024-10-29 | NCR-K000014 | Loctite-242 Storage Temperature Requirement Discrepancy
+    #Common | 2024-10-23 | NCR-K000013 | EV240 Bedside Unit Break Switch Malfunction
+    #Common | 2024-10-22 | NCR-K000012 | EV240 Control Console IO Testing Failure
+    #Common | 2024-10-21 | NCR-K000011 | Clamp parts supplier manufacturing error
+    #Common | 2024-10-21 | NCR-K000010 | Clamp part incoming inspection non-conformance
+    #Common | 2024-10-21 | NCR-K000009 | Clamp parts incoming inspection failure due to drawing errors
+    #Common | 2024-10-21 | NCR-K000008 | 24AM0134014A M8 SCREW Supplier Inspection Data Absence
+    #Common | 2024-10-17 | NCR-K000007 | MP-K0001 Assembly(Harness)
+    #Common | 2024-10-17 | NCR-K000006 | MP-K0001 Mechanical Assembly Non-conformance
+    #Common | 2024-10-16 | NCR-K000005 | Loctite 401 Storage Temperature Non-conformance
+    #Common | 2024-10-16 | NCR-K000004 | 24AM0131234A Motor BL-1 Supplier Inspection Data Absence
+    #Common | 2024-09-26 | CAR-K000001 | Incoming Inspection Process Deviation
+    #Common | 2024-09-02 | NCR-K000003 | Electrical Off-the-Shelf parts incoming inspection nonconformance
+    #Common | 2024-08-30 | NCR-K000002 | Supplier Inspection Data Absence
+    #Common | 2024-08-29 | NCR-K000001 | Supplier Inspection Data Resolution Insufficiency

@@ -5,94 +5,94 @@
   // Default blueprint mock data
   const DEFAULT_DATA = `// SYSTEM OPERATION TIMELINE
 // FORMAT: EQUIPMENT | YYYY-MM-DD | TITLE | DESCRIPTION
-#1호기 | 2026-06-12 | 배선변경 확인 | 배선변경 후 오동작 발생하지 않음 (H/W Safety 기능 잘 동작)
+#Unit 1 | 2026-06-12 | Wiring Change Verification | No malfunction occurred after wiring change (H/W Safety function works properly)
 
-#2호기 | 2026-06-01 | 스위치 Off 정지 실패 | 조작 중 Console 파워스위치 Off 시 이동 정지 실패 (H/W Safety 미동작, F/W Safety만 작동)
+#Unit 2 | 2026-06-01 | Switch Off Stop Failure | Failed to stop movement when Console power switch was turned Off during operation (H/W Safety not working, only F/W Safety active)
 
-#3호기 | 2025-02-04 | 조립완료 | 조립 완료
-#3호기 | 2025-12-09 | F/W 2.0.0 설치 | F/W 2.0.0 설치 (E-Stop 기능 개선, AC-DC 어댑터 추적성 확보)
-#3호기 | 2025-12-24 | F/W 1.1.1 설치 | F/W 1.1.1 롤백 설치
-#3호기 | 2025-12-29 | F/W 2.1.2 설치 | F/W 2.1.2 설치 (EVR System Model 3R 움직임/사용성 개선, SQA 통과)
-#3호기 | 2026-02-28 | F/W 2.1.3 설치 | F/W 2.1.3 설치 (MC_F 및 GW_M 모듈 Retract 시 멈춤 해결, Collet Grab 개선)
+#Unit 3 | 2025-02-04 | Assembly Completed | Assembly completed
+#Unit 3 | 2025-12-09 | Install F/W 2.0.0 | F/W 2.0.0 installed (E-Stop function improved, AC-DC adapter traceability secured)
+#Unit 3 | 2025-12-24 | Rollback F/W 1.1.1 | F/W 1.1.1 rollback installation
+#Unit 3 | 2025-12-29 | Install F/W 2.1.2 | F/W 2.1.2 installed (EVR System Model 3R movement/usability improved, passed SQA)
+#Unit 3 | 2026-02-28 | Install F/W 2.1.3 | F/W 2.1.3 installed (Resolved freeze during MC_F and GW_M modules retract, Collet Grab improved)
 
-#4호기 | 2025-03-21 | 조립완료 | 조립 완료
-#4호기 | 2025-08-20 | F/W 2.0.0 설치 | F/W 2.0.0 설치 (E-Stop 기능 개선, AC-DC 어댑터 추적성 확보)
-#4호기 | 2025-12-12 | F/W 2.1.2 설치 | F/W 2.1.2 설치 (EVR System Model 3R 움직임/사용성 개선, SQA 통과)
-#4호기 | 2026-05-22 | F/W 2.1.3 설치 | F/W 2.1.3 설치 (MC_F 및 GW_M 모듈 Retract 시 멈춤 해결, Collet Grab 개선)
-#4호기 | 2026-06-01 | 스위치 Off 정지 실패 | 조작 중 Console 파워스위치 Off 시 이동 정지 실패 (H/W Safety 미동작, F/W Safety만 작동)
+#Unit 4 | 2025-03-21 | Assembly Completed | Assembly completed
+#Unit 4 | 2025-08-20 | Install F/W 2.0.0 | F/W 2.0.0 installed (E-Stop function improved, AC-DC adapter traceability secured)
+#Unit 4 | 2025-12-12 | Install F/W 2.1.2 | F/W 2.1.2 installed (EVR System Model 3R movement/usability improved, passed SQA)
+#Unit 4 | 2026-05-22 | Install F/W 2.1.3 | F/W 2.1.3 installed (Resolved freeze during MC_F and GW_M modules retract, Collet Grab improved)
+#Unit 4 | 2026-06-01 | Switch Off Stop Failure | Failed to stop movement when Console power switch was turned Off during operation (H/W Safety not working, only F/W Safety active)
 
-#공통 | 2026-06-01 | 케이블 제거 테스트 | Interface Cable 제거 시 정상 정지 확인 (F/W Safety 정상 작동)
+#Common | 2026-06-01 | Cable Removal Test | Verified normal stop upon Interface Cable removal (F/W Safety working normally)
 
-#2호기 | 2026-01-30 | NCR-K000064 | Control Console #2 Rework
-#2호기 | 2024-12-10 | NCR-K000020 | EV240#2 Manufacturing Non-conformance
-#3호기 | 2026-06-04 | NCR-K000068 | EVR Unit #3 – Slow Module Movement During 1 mm Command
-#3호기 | 2026-06-02 | NCR-K000067 | EVR Unit 3 System Cart Rework
-#3호기 | 2025-12-05 | NCR-K000058 | EVR Unit 3 and Unit 4 System Cart Rework
-#4호기 | 2026-05-27 | NCR-K000066 | EVR Unit 4 Abnormal Behavior
-#4호기 | 2026-01-21 | NCR-K000063 | EVR Unit 4 Bedside Unit Investigation and Remote Console Rework
-#4호기 | 2025-12-05 | NCR-K000058 | EVR Unit 3 and Unit 4 System Cart Rework
-#4호기 | 2025-09-10 | NCR-K000055 | EVR Unit 4 Overcurrent
-#4호기 | 2025-05-22 | NCR-K000046 | EV240 #4 CAN Communication Failure due to NCR-K000045 rework
-#공통 | 2026-04-29 | NCR-K000065 | Motor Power Loss
-#공통 | 2026-01-06 | NCR-K000062 | TP-K0017 Model 3R EP Execution Non-conformances
-#공통 | 2025-12-24 | NCR-K000061 | Non-conformance of IC240 Cassettes
-#공통 | 2025-12-22 | NCR-K000060 | Sterilized Inventory EO GAS Chemical Indicator Inconsistency
-#공통 | 2025-12-05 | NCR-K000059 | Labeling Rework
-#공통 | 2025-11-17 | NCR-K000057 | [EVS240R] DVM Module No.4 Translation-Area Deviation and Overcurrent Issue
-#공통 | 2025-11-07 | NCR-K000056 | E-Stop Inconsistency
-#공통 | 2025-09-02 | NCR-K000054 | Adapter Rework
-#공통 | 2025-08-19 | NCR-K000053 | Model 3R 60601-1-2 Debugging
-#공통 | 2025-08-11 | NCR-K000052 | Conversion from Model 3 to Model 3R
-#공통 | 2025-08-06 | NCR-K000051 | EV240 unit #4 SW Validation Failure Debugging
-#공통 | 2025-08-05 | NCR-K000050 | System Cart Rework
-#공통 | 2025-07-10 | NCR-K000049 | Positioning Arm LED Strip Non-conformance
-#공통 | 2025-06-24 | NCR-K000048 | Adaptor Identification and Rework
-#공통 | 2025-06-24 | NCR-K000047 | 3R Control Console Rework - Rubber Stopper
-#공통 | 2025-05-14 | NCR-K000045 | Positioning Arm Color-coded Sockets Non-conformance
-#공통 | 2025-04-18 | NCR-K000044 | Replacement of a potentially damaged joystick in CST Controller before conducting the IEC 60601-1 test
-#공통 | 2025-04-12 | CAR-000026 | Internal Audit Finding #1: Rework
-#공통 | 2025-04-08 | NCR-K000043 | Usability Issues during Model Testing
-#공통 | 2025-04-08 | NCR-K000042 | Hemocompatibility Testing Failure
-#공통 | 2025-04-08 | NCR-K000041 | Single Batch Sterilization
-#공통 | 2025-04-07 | NCR-K000040 | 3R Console Reworks - 60601
-#공통 | 2025-04-04 | NCR-K000039 | Board Supplier Rework
-#공통 | 2025-03-18 | NCR-K000038 | 24AE0030002A-10MAR25-0002 Part Non-conformance
-#공통 | 2025-03-18 | NCR-K000037 | EV240 rework to match 60601-1-2 debugging
-#공통 | 2025-03-11 | NCR-K000036 | Board Supplier Rework
-#공통 | 2025-03-11 | NCR-K000035 | EVR Gen2.4 CST Controller Board Incoming Inspection Non-conformance
-#공통 | 2025-03-07 | NCR-K000034 | Cassette Parts Manufacturing Non-Confromance
-#공통 | 2025-02-07 | NCR-K000033 | EV240 60601-1-2 Debugging
-#공통 | 2025-02-06 | NCR-K000032 | Supplier Manufacturing Error: 24AM0231004A
-#공통 | 2025-02-04 | NCR-K000031 | EVR240 60601-1-2 Debugging
-#공통 | 2025-02-04 | NCR-K000030 | Loctite 401 Storage Temperature Non-conformance
-#공통 | 2025-01-20 | NCR-K000029 | 3R CTRL Console fastener length insufficiency
-#공통 | 2025-01-20 | NCR-K000028 | 3R CTRL Console parts supplier manufacturing error
-#공통 | 2025-01-10 | NCR-K000027 | Buckling Detection System Distance Recalibration
-#공통 | 2025-01-03 | NCR-K000026 | R&D Cassette Build Conversion
-#공통 | 2024-12-30 | NCR-K000025 | IO Testing Finds
-#공통 | 2024-12-27 | NCR-K000023 | Slide Lock Pin and Base Holes
-#공통 | 2024-12-19 | NCR-K000022 | Cassette Lock Block Non-conformance
-#공통 | 2024-12-18 | NCR-K000021 | Collet Block GW Nonconformance
-#공통 | 2024-12-10 | NCR-K000019 | Single-Use Components Incoming Inspection Non-conformances
-#공통 | 2024-12-09 | NCR-K000018 | Single Use Cassette Manufacturing Deviation
-#공통 | 2024-12-09 | NCR-K000017 | GW Rotate Master Gear Nonconformance
-#공통 | 2024-11-08 | NCR-K000016 | Single-Use Components Incoming Inspection Non-conformances
-#공통 | 2024-10-29 | NCR-K000015 | EV240 for IEC 60601-1 Testing
-#공통 | 2024-10-29 | NCR-K000014 | Loctite-242 Storage Temperature Requirement Discrepancy
-#공통 | 2024-10-23 | NCR-K000013 | EV240 Bedside Unit Break Switch Malfunction
-#공통 | 2024-10-22 | NCR-K000012 | EV240 Control Console IO Testing Failure
-#공통 | 2024-10-21 | NCR-K000011 | Clamp parts supplier manufacturing error
-#공통 | 2024-10-21 | NCR-K000010 | Clamp part incoming inspection non-conformance
-#공통 | 2024-10-21 | NCR-K000009 | Clamp parts incoming inspection failure due to drawing errors
-#공통 | 2024-10-21 | NCR-K000008 | 24AM0134014A M8 SCREW Supplier Inspection Data Absence
-#공통 | 2024-10-17 | NCR-K000007 | MP-K0001 Assembly(Harness)
-#공통 | 2024-10-17 | NCR-K000006 | MP-K0001 Mechanical Assembly Non-conformance
-#공통 | 2024-10-16 | NCR-K000005 | Loctite 401 Storage Temperature Non-conformance
-#공통 | 2024-10-16 | NCR-K000004 | 24AM0131234A Motor BL-1 Supplier Inspection Data Absence
-#공통 | 2024-09-26 | CAR-K000001 | Incoming Inspection Process Deviation
-#공통 | 2024-09-02 | NCR-K000003 | Electrical Off-the-Shelf parts incoming inspection nonconformance
-#공통 | 2024-08-30 | NCR-K000002 | Supplier Inspection Data Absence
-#공통 | 2024-08-29 | NCR-K000001 | Supplier Inspection Data Resolution Insufficiency`;
+#Unit 2 | 2026-01-30 | NCR-K000064 | Control Console #2 Rework
+#Unit 2 | 2024-12-10 | NCR-K000020 | EV240#2 Manufacturing Non-conformance
+#Unit 3 | 2026-06-04 | NCR-K000068 | EVR Unit #3 – Slow Module Movement During 1 mm Command
+#Unit 3 | 2026-06-02 | NCR-K000067 | EVR Unit 3 System Cart Rework
+#Unit 3 | 2025-12-05 | NCR-K000058 | EVR Unit 3 and Unit 4 System Cart Rework
+#Unit 4 | 2026-05-27 | NCR-K000066 | EVR Unit 4 Abnormal Behavior
+#Unit 4 | 2026-01-21 | NCR-K000063 | EVR Unit 4 Bedside Unit Investigation and Remote Console Rework
+#Unit 4 | 2025-12-05 | NCR-K000058 | EVR Unit 3 and Unit 4 System Cart Rework
+#Unit 4 | 2025-09-10 | NCR-K000055 | EVR Unit 4 Overcurrent
+#Unit 4 | 2025-05-22 | NCR-K000046 | EV240 #4 CAN Communication Failure due to NCR-K000045 rework
+#Common | 2026-04-29 | NCR-K000065 | Motor Power Loss
+#Common | 2026-01-06 | NCR-K000062 | TP-K0017 Model 3R EP Execution Non-conformances
+#Common | 2025-12-24 | NCR-K000061 | Non-conformance of IC240 Cassettes
+#Common | 2025-12-22 | NCR-K000060 | Sterilized Inventory EO GAS Chemical Indicator Inconsistency
+#Common | 2025-12-05 | NCR-K000059 | Labeling Rework
+#Common | 2025-11-17 | NCR-K000057 | [EVS240R] DVM Module No.4 Translation-Area Deviation and Overcurrent Issue
+#Common | 2025-11-07 | NCR-K000056 | E-Stop Inconsistency
+#Common | 2025-09-02 | NCR-K000054 | Adapter Rework
+#Common | 2025-08-19 | NCR-K000053 | Model 3R 60601-1-2 Debugging
+#Common | 2025-08-11 | NCR-K000052 | Conversion from Model 3 to Model 3R
+#Common | 2025-08-06 | NCR-K000051 | EV240 unit #4 SW Validation Failure Debugging
+#Common | 2025-08-05 | NCR-K000050 | System Cart Rework
+#Common | 2025-07-10 | NCR-K000049 | Positioning Arm LED Strip Non-conformance
+#Common | 2025-06-24 | NCR-K000048 | Adaptor Identification and Rework
+#Common | 2025-06-24 | NCR-K000047 | 3R Control Console Rework - Rubber Stopper
+#Common | 2025-05-14 | NCR-K000045 | Positioning Arm Color-coded Sockets Non-conformance
+#Common | 2025-04-18 | NCR-K000044 | Replacement of a potentially damaged joystick in CST Controller before conducting the IEC 60601-1 test
+#Common | 2025-04-12 | CAR-000026 | Internal Audit Finding #1: Rework
+#Common | 2025-04-08 | NCR-K000043 | Usability Issues during Model Testing
+#Common | 2025-04-08 | NCR-K000042 | Hemocompatibility Testing Failure
+#Common | 2025-04-08 | NCR-K000041 | Single Batch Sterilization
+#Common | 2025-04-07 | NCR-K000040 | 3R Console Reworks - 60601
+#Common | 2025-04-04 | NCR-K000039 | Board Supplier Rework
+#Common | 2025-03-18 | NCR-K000038 | 24AE0030002A-10MAR25-0002 Part Non-conformance
+#Common | 2025-03-18 | NCR-K000037 | EV240 rework to match 60601-1-2 debugging
+#Common | 2025-03-11 | NCR-K000036 | Board Supplier Rework
+#Common | 2025-03-11 | NCR-K000035 | EVR Gen2.4 CST Controller Board Incoming Inspection Non-conformance
+#Common | 2025-03-07 | NCR-K000034 | Cassette Parts Manufacturing Non-Confromance
+#Common | 2025-02-07 | NCR-K000033 | EV240 60601-1-2 Debugging
+#Common | 2025-02-06 | NCR-K000032 | Supplier Manufacturing Error: 24AM0231004A
+#Common | 2025-02-04 | NCR-K000031 | EVR240 60601-1-2 Debugging
+#Common | 2025-02-04 | NCR-K000030 | Loctite 401 Storage Temperature Non-conformance
+#Common | 2025-01-20 | NCR-K000029 | 3R CTRL Console fastener length insufficiency
+#Common | 2025-01-20 | NCR-K000028 | 3R CTRL Console parts supplier manufacturing error
+#Common | 2025-01-10 | NCR-K000027 | Buckling Detection System Distance Recalibration
+#Common | 2025-01-03 | NCR-K000026 | R&D Cassette Build Conversion
+#Common | 2024-12-30 | NCR-K000025 | IO Testing Finds
+#Common | 2024-12-27 | NCR-K000023 | Slide Lock Pin and Base Holes
+#Common | 2024-12-19 | NCR-K000022 | Cassette Lock Block Non-conformance
+#Common | 2024-12-18 | NCR-K000021 | Collet Block GW Nonconformance
+#Common | 2024-12-10 | NCR-K000019 | Single-Use Components Incoming Inspection Non-conformances
+#Common | 2024-12-09 | NCR-K000018 | Single Use Cassette Manufacturing Deviation
+#Common | 2024-12-09 | NCR-K000017 | GW Rotate Master Gear Nonconformance
+#Common | 2024-11-08 | NCR-K000016 | Single-Use Components Incoming Inspection Non-conformances
+#Common | 2024-10-29 | NCR-K000015 | EV240 for IEC 60601-1 Testing
+#Common | 2024-10-29 | NCR-K000014 | Loctite-242 Storage Temperature Requirement Discrepancy
+#Common | 2024-10-23 | NCR-K000013 | EV240 Bedside Unit Break Switch Malfunction
+#Common | 2024-10-22 | NCR-K000012 | EV240 Control Console IO Testing Failure
+#Common | 2024-10-21 | NCR-K000011 | Clamp parts supplier manufacturing error
+#Common | 2024-10-21 | NCR-K000010 | Clamp part incoming inspection non-conformance
+#Common | 2024-10-21 | NCR-K000009 | Clamp parts incoming inspection failure due to drawing errors
+#Common | 2024-10-21 | NCR-K000008 | 24AM0134014A M8 SCREW Supplier Inspection Data Absence
+#Common | 2024-10-17 | NCR-K000007 | MP-K0001 Assembly(Harness)
+#Common | 2024-10-17 | NCR-K000006 | MP-K0001 Mechanical Assembly Non-conformance
+#Common | 2024-10-16 | NCR-K000005 | Loctite 401 Storage Temperature Non-conformance
+#Common | 2024-10-16 | NCR-K000004 | 24AM0131234A Motor BL-1 Supplier Inspection Data Absence
+#Common | 2024-09-26 | CAR-K000001 | Incoming Inspection Process Deviation
+#Common | 2024-09-02 | NCR-K000003 | Electrical Off-the-Shelf parts incoming inspection nonconformance
+#Common | 2024-08-30 | NCR-K000002 | Supplier Inspection Data Absence
+#Common | 2024-08-29 | NCR-K000001 | Supplier Inspection Data Resolution Insufficiency`;
 
   // Reactive State (Svelte 5 Runes)
   let rawText = $state('');
