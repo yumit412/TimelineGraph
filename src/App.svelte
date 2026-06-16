@@ -1203,7 +1203,7 @@
                     <path 
                       class="svg-leader-line"
                       d={event.pathData}
-                      stroke={isHovered(event) ? '#202020' : (isHighlighted(event) ? '#e65100' : (event.theme ? event.theme.stroke : 'var(--color-const-blue)'))}
+                      stroke={isHovered(event) ? 'var(--color-const-blue)' : (isHighlighted(event) ? '#e65100' : (event.theme ? event.theme.stroke : 'var(--color-const-blue)'))}
                       stroke-width={isHovered(event) ? '2.5px' : (isHighlighted(event) ? '2.5px' : '1.5px')}
                       opacity={searchQuery.trim() && !isHighlighted(event) ? 0.3 : 1}
                       style="transition: opacity 150ms;"
@@ -1213,12 +1213,12 @@
                     <circle
                       cx={event.xOrig}
                       cy={row.Y_axis}
-                      r={isHighlighted(event) ? "5" : "4"}
-                      fill={isHovered(event) ? '#202020' : (isHighlighted(event) ? '#e65100' : (event.theme ? event.theme.stroke : 'var(--color-const-blue)'))}
+                      r={isHovered(event) || isHighlighted(event) ? "6" : "4"}
+                      fill={isHovered(event) ? 'var(--color-const-blue)' : (isHighlighted(event) ? '#e65100' : (event.theme ? event.theme.stroke : 'var(--color-const-blue)'))}
                       stroke="#ffffff"
-                      stroke-width="1"
+                      stroke-width="1.5"
                       opacity={searchQuery.trim() && !isHighlighted(event) ? 0.3 : 1}
-                      style="transition: opacity 150ms;"
+                      style="transition: opacity 150ms, r 150ms;"
                     />
                   {/each}
 
@@ -1300,7 +1300,7 @@
                     {#if isHovered(event)}
                       <!-- svelte-ignore a11y_no_static_element_interactions -->
                       <g 
-                        class="svg-balloon-group" 
+                        class="svg-balloon-group hovered" 
                         style="cursor: pointer; opacity: {searchQuery.trim() && !isHighlighted(event) ? 0.3 : 1}; transition: opacity 150ms;"
                         role="presentation"
                         onclick={() => {
