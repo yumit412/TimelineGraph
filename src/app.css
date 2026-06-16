@@ -1,0 +1,852 @@
+/* ==========================================================================
+   MECHANICAL ENGINEERING DRAWING GLOBAL SYSTEM STYLE
+   ========================================================================== */
+
+:root {
+  --color-pure-white: #ffffff;
+  --color-off-white: #f8f8f8;
+  --color-light-gray: #e5e5e5;
+  --color-medium-gray: #b0b0b0;
+  --color-dark-gray: #505050;
+  --color-near-black: #202020;
+  --color-const-blue: #607d8b;
+  --color-dim-gray: #707070;
+  
+  --line-construction: 1px dashed var(--color-light-gray);
+  --line-normal: 1.5px solid var(--color-medium-gray);
+  --line-major: 2px solid var(--color-dark-gray);
+  --line-section: 3px solid var(--color-near-black);
+  
+  --font-mono: 'JetBrains Mono', 'Roboto Mono', monospace;
+  --font-tech: 'Share Tech Mono', 'JetBrains Mono', monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-mono);
+  background-color: #f0f0f0;
+  color: var(--color-near-black);
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+}
+
+/* CAD App Main Layout Frame */
+.cad-app-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: var(--color-pure-white);
+  border: var(--line-section);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Outer Border of the Drawing Paper */
+.cad-frame {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  height: 100%;
+  position: relative;
+}
+
+/* 1. Header Area: Drawing Metadata */
+.cad-header {
+  display: flex;
+  border: var(--line-major);
+  margin-bottom: 8px;
+  background-color: var(--color-off-white);
+}
+
+.header-section {
+  flex: 1;
+  padding: 6px 12px;
+  border-right: var(--line-normal);
+  display: flex;
+  flex-direction: column;
+}
+
+.header-section:last-child {
+  border-right: none;
+}
+
+.header-section .label {
+  font-family: var(--font-tech);
+  font-size: 10px;
+  color: var(--color-dim-gray);
+  letter-spacing: 0.5px;
+  margin-bottom: 2px;
+}
+
+.header-section .value {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* 2. Workspace: Editor (Left) & Canvas (Right) */
+.cad-workspace {
+  flex: 1;
+  display: flex;
+  min-height: 0;
+  gap: 8px;
+}
+
+/* Left: Control Panel */
+.cad-control-panel {
+  width: 390px;
+  min-width: 390px;
+  border: var(--line-major);
+  background-color: var(--color-off-white);
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  overflow-y: auto;
+}
+
+.panel-section-title {
+  font-family: var(--font-tech);
+  font-size: 12px;
+  font-weight: 700;
+  background-color: var(--color-near-black);
+  color: var(--color-pure-white);
+  padding: 4px 8px;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.panel-section-title:first-child {
+  margin-top: 0;
+}
+
+/* Tabs */
+.tab-controls {
+  display: flex;
+  border: var(--line-normal);
+  margin-bottom: 8px;
+}
+
+.tab-btn {
+  flex: 1;
+  background: none;
+  border: none;
+  border-right: var(--line-normal);
+  padding: 6px;
+  font-family: var(--font-tech);
+  font-size: 11px;
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--color-dim-gray);
+  letter-spacing: 1px;
+  transition: background-color 150ms;
+}
+
+.tab-btn:last-child {
+  border-right: none;
+}
+
+.tab-btn.active {
+  background-color: var(--color-near-black);
+  color: var(--color-pure-white);
+}
+
+.tab-btn:not(.active):hover {
+  background-color: var(--color-light-gray);
+  color: var(--color-near-black);
+}
+
+.tab-content {
+  display: none;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+}
+
+.tab-content.active {
+  display: flex;
+}
+
+.help-text {
+  font-size: 10px;
+  color: var(--color-dim-gray);
+  line-height: 1.4;
+  margin-bottom: 8px;
+  padding: 4px;
+  border-left: 3px solid var(--color-const-blue);
+  background-color: var(--color-pure-white);
+}
+
+.highlight {
+  color: var(--color-near-black);
+  font-weight: bold;
+}
+
+textarea#raw-text-input {
+  width: 100%;
+  flex: 1;
+  min-height: 280px;
+  border: var(--line-normal);
+  padding: 8px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-near-black);
+  background-color: var(--color-pure-white);
+  resize: vertical;
+  line-height: 1.5;
+  outline: none;
+}
+
+textarea#raw-text-input:focus {
+  border-color: var(--color-near-black);
+}
+
+/* BOM Table Editor Styles */
+.table-actions {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.bom-table-container {
+  flex: 1;
+  border: var(--line-normal);
+  background-color: var(--color-pure-white);
+  overflow: auto;
+  min-height: 280px;
+}
+
+#bom-input-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11px;
+  text-align: left;
+}
+
+#bom-input-table th, #bom-input-table td {
+  border: 1px solid var(--color-light-gray);
+  padding: 4px;
+}
+
+#bom-input-table th {
+  background-color: var(--color-off-white);
+  color: var(--color-near-black);
+  font-family: var(--font-tech);
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  border-bottom: var(--line-normal);
+  z-index: 1;
+}
+
+#bom-input-table input {
+  width: 100%;
+  border: none;
+  background: transparent;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  padding: 2px;
+  outline: none;
+}
+
+#bom-input-table input:focus {
+  background-color: var(--color-off-white);
+}
+
+.bom-row-delete-btn {
+  background: none;
+  border: none;
+  color: #c62828;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+}
+
+.bom-row-delete-btn:hover {
+  background-color: #ffebee;
+}
+
+/* Viewport Settings Grid */
+.viewport-settings {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6px;
+  background-color: var(--color-pure-white);
+  border: var(--line-normal);
+  padding: 8px;
+  font-size: 11px;
+}
+
+.settings-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.settings-group label {
+  color: var(--color-dim-gray);
+  font-family: var(--font-tech);
+  font-weight: bold;
+}
+
+.settings-group input, .settings-group select {
+  width: 120px;
+  border: var(--line-normal);
+  padding: 2px 4px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  background-color: var(--color-pure-white);
+  outline: none;
+}
+
+.settings-group input:focus, .settings-group select:focus {
+  border-color: var(--color-near-black);
+}
+
+/* System Console Panel */
+.feedback-console {
+  margin-top: 8px;
+  font-size: 10px;
+}
+
+.feedback-console .label {
+  font-family: var(--font-tech);
+  color: var(--color-dim-gray);
+  font-weight: bold;
+  display: block;
+  margin-bottom: 2px;
+}
+
+#console-output {
+  border: var(--line-normal);
+  padding: 6px 8px;
+  background-color: #2e2e2e;
+  font-family: var(--font-mono);
+  min-height: 40px;
+  max-height: 80px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  line-height: 1.3;
+}
+
+#console-output.console-green {
+  color: #00e676;
+}
+
+#console-output.console-error {
+  color: #ff5252;
+}
+
+#console-output.console-idle {
+  color: #80d8ff;
+}
+
+/* Right: Graphic CAD Viewport */
+.cad-viewport {
+  flex: 1;
+  border: var(--line-major);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-pure-white);
+  position: relative;
+}
+
+.viewport-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-near-black);
+  color: var(--color-pure-white);
+  padding: 4px 12px;
+  height: 28px;
+}
+
+.viewport-title {
+  font-family: var(--font-tech);
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.viewport-controls {
+  display: flex;
+  gap: 2px;
+}
+
+.viewport-btn {
+  background: #333333;
+  color: var(--color-pure-white);
+  border: 1px solid #505050;
+  width: 24px;
+  height: 20px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.viewport-btn:hover {
+  background: var(--color-dim-gray);
+}
+
+#btn-zoom-reset {
+  width: auto;
+  padding: 0 6px;
+  font-size: 9px;
+  letter-spacing: 0.5px;
+}
+
+/* Drawing Canvas Area (SVG host) */
+.drawing-area {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  cursor: grab;
+  background-color: var(--color-pure-white);
+}
+
+.drawing-area:active {
+  cursor: grabbing;
+}
+
+#timeline-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* 3. Footer Area */
+.cad-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  border: var(--line-major);
+  margin-top: 8px;
+  background-color: var(--color-off-white);
+  min-height: 60px;
+}
+
+.footer-status {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  font-family: var(--font-tech);
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-right: var(--line-normal);
+  color: var(--color-dim-gray);
+  flex: 1;
+}
+
+@keyframes blink-animation {
+  0% { opacity: 0.2; }
+  50% { opacity: 1.0; }
+  100% { opacity: 0.2; }
+}
+
+.blink {
+  color: #00e676;
+  margin-right: 6px;
+  animation: blink-animation 1.5s infinite;
+}
+
+/* Title Block (CAD Drawing Stamp) */
+.title-block {
+  display: flex;
+  flex-direction: column;
+  width: 530px;
+}
+
+.title-block-row {
+  display: flex;
+  flex: 1;
+  border-bottom: var(--line-normal);
+}
+
+.title-block-row:last-child {
+  border-bottom: none;
+}
+
+.title-block-cell {
+  flex: 1;
+  padding: 4px 8px;
+  border-right: var(--line-normal);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title-block-cell:last-child {
+  border-right: none;
+}
+
+.title-block-cell.cell-2 {
+  flex: 2;
+}
+
+.title-block-cell.cell-buttons {
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  padding: 4px;
+}
+
+.tb-label {
+  font-family: var(--font-tech);
+  font-size: 8px;
+  color: var(--color-dim-gray);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.tb-val {
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.tb-val.bold {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.font-large {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Wireframe Button styles */
+.cad-btn-sm {
+  background-color: var(--color-pure-white);
+  border: var(--line-normal);
+  padding: 4px 8px;
+  font-family: var(--font-tech);
+  font-size: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: all 150ms;
+}
+
+.cad-btn-sm:hover {
+  background-color: var(--color-near-black);
+  color: var(--color-pure-white);
+  border-color: var(--color-near-black);
+}
+
+.warning-btn {
+  color: #c62828;
+  border-color: #c62828;
+}
+
+.warning-btn:hover {
+  background-color: #c62828;
+  color: var(--color-pure-white);
+}
+
+.tb-action-btn {
+  flex: 1;
+  height: 100%;
+  background-color: var(--color-near-black);
+  color: var(--color-pure-white);
+  border: 1px solid var(--color-near-black);
+  font-family: var(--font-tech);
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 150ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tb-action-btn:hover {
+  background-color: var(--color-pure-white);
+  color: var(--color-near-black);
+  border: 1px solid var(--color-near-black);
+}
+
+/* Toast Message */
+.toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background-color: var(--color-near-black);
+  color: var(--color-pure-white);
+  border: var(--line-normal);
+  border-color: var(--color-light-gray);
+  padding: 8px 16px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 1px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 250ms ease;
+  z-index: 1000;
+}
+
+.toast.show {
+  opacity: 1;
+}
+
+/* Timeline SVG Graphics Elements styling */
+.svg-axis-line {
+  stroke: var(--color-near-black);
+  stroke-width: 2px;
+}
+
+.svg-tick-line {
+  stroke: var(--color-dim-gray);
+  stroke-width: 1.5px;
+}
+
+.svg-tick-text {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  fill: var(--color-dim-gray);
+  text-anchor: middle;
+}
+
+.svg-group-title {
+  font-family: var(--font-tech);
+  font-size: 12px;
+  font-weight: bold;
+  fill: var(--color-near-black);
+  letter-spacing: 1px;
+}
+
+.svg-group-bg-line {
+  stroke: var(--color-light-gray);
+  stroke-width: 1px;
+  stroke-dasharray: 4, 4;
+}
+
+.svg-leader-line {
+  stroke: var(--color-const-blue);
+  stroke-width: 1.5px;
+  fill: none;
+  stroke-linejoin: round;
+}
+
+.svg-balloon-rect {
+  fill: var(--color-pure-white);
+  stroke: var(--color-near-black);
+  stroke-width: 1.5px;
+}
+
+.svg-balloon-rect.active {
+  stroke: var(--color-const-blue);
+  stroke-width: 2px;
+}
+
+/* Balloon internal markup via foreignObject */
+.balloon-content {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 6px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  line-height: 1.3;
+  color: var(--color-near-black);
+}
+
+.balloon-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1.5px solid var(--color-light-gray);
+  padding: 5px 6px;
+}
+
+.balloon-date {
+  font-weight: bold;
+  color: var(--color-dim-gray);
+}
+
+.balloon-title {
+  font-weight: 700;
+  color: var(--color-near-black);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 110px;
+}
+
+.balloon-desc {
+  flex: 1;
+  padding: 6px;
+  overflow: hidden;
+  color: #404040;
+  font-size: 9px;
+  word-break: break-word;
+}
+
+.svg-grid-line-major {
+  stroke: rgba(112, 112, 112, 0.15);
+  stroke-width: 1px;
+}
+
+/* Embedded / Timeline Only View Mode */
+.cad-app-container.embedded {
+  border: none;
+}
+
+.cad-app-container.embedded .cad-frame {
+  padding: 0;
+}
+
+.cad-app-container.embedded .cad-workspace {
+  gap: 0;
+}
+
+.cad-app-container.embedded .cad-viewport {
+  border: none;
+}
+
+.floating-viewport-controls {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  gap: 4px;
+  z-index: 100;
+  background: rgba(32, 32, 32, 0.85); /* Semi-transparent Near Black */
+  padding: 3px;
+  border: 1.5px solid var(--color-dark-gray);
+}
+
+.floating-btn {
+  background: transparent;
+  color: var(--color-pure-white);
+  border: 1px solid #505050;
+  width: 28px;
+  height: 24px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 150ms;
+}
+
+.floating-btn:hover {
+  background: var(--color-dim-gray);
+}
+
+.floating-btn.text-btn {
+  width: auto;
+  padding: 0 8px;
+  font-size: 9px;
+  letter-spacing: 0.5px;
+}
+
+/* Floating Popover Controls in Viewport Header */
+.floating-popover {
+  position: absolute;
+  top: 24px;
+  right: 0;
+  width: 200px;
+  background-color: var(--color-near-black);
+  border: 1.5px solid var(--color-dark-gray);
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  border-radius: 2px;
+  padding: 6px;
+}
+
+.popover-title {
+  font-family: var(--font-tech);
+  font-size: 10px;
+  font-weight: bold;
+  color: var(--color-medium-gray);
+  padding: 4px;
+  border-bottom: 1px solid var(--color-dark-gray);
+  margin-bottom: 6px;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+
+.popover-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.popover-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 4px;
+  transition: background-color 100ms;
+  text-align: left;
+}
+
+.popover-item:hover {
+  background-color: #333333;
+}
+
+.popover-item input[type="checkbox"] {
+  cursor: pointer;
+  accent-color: var(--color-pure-white);
+  width: 12px;
+  height: 12px;
+  margin: 0;
+}
+
+.popover-item span {
+  font-family: var(--font-tech);
+  font-size: 10px;
+  color: var(--color-pure-white);
+  font-weight: bold;
+}
+
+.popover-empty {
+  font-size: 9px;
+  color: var(--color-dim-gray);
+  font-style: italic;
+  padding: 4px;
+}
+
